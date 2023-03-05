@@ -8585,3 +8585,19 @@ div.tabs .tab-content .tab-pane .highlight:first-child,div.tabs .tab-content .ta
 div.tabs .tab-content .tab-pane .highlight:last-child,div.tabs .tab-content .tab-pane .note:last-child,div.tabs .tab-content .tab-pane .tabs:last-child,div.tabs .tab-content .tab-pane ol:last-child,div.tabs .tab-content .tab-pane ul:last-child,div.tabs .tab-content .tab-pane>p:last-child {
 	margin-bottom:0
 }
+
+
+#player{
+	width: 25%;
+	-webkit-transition:width 300ms ease-in-out, height 300ms ease-in-out;
+	-moz-transition:width 300ms ease-in-out, height 300ms ease-in-out;
+	-o-transition:width 300ms ease-in-out, height 300ms ease-in-out;
+	transition:width 300ms ease-in-out, height 300ms ease-in-out;
+}
+#player:hover{
+	width: 100%;
+	-webkit-transition:width 300ms ease-in-out, height 300ms ease-in-out;
+	-moz-transition:width 300ms ease-in-out, height 300ms ease-in-out;
+	-o-transition:width 300ms ease-in-out, height 300ms ease-in-out;
+	transition:width 300ms ease-in-out, height 300ms ease-in-out;
+}
