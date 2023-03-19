@@ -1,0 +1,42 @@
+  {{ range first 3 ( where .Site.RegularPages "Type" "posts" ) }}
+    {{- if eq .Params.Cover.Position "left" }}
+      <div class="flex flex-col sm:flex-row gap-6 mb-14">
+        <img src="{{.Params.Cover.image}}"  alt="{{.Params.Cover.Alt}}" class="w-full md:object-cover sm:w-1/2">
+        <div class="w-full sm:w-1/2">
+          <h1 class="text-xl sm:text-4xl font-bold mb-2 sm:mb-4">
+          {{.Params.Title}}
+          </h1>
+          <h2 class="text-lg sm:text-3xl font-medium mb-6">
+            {{.Params.SubTitle}}
+          </h2>
+          <h3 class="text-base text-bakery-subheading mb-12">
+            {{ .Params.Description }}
+          </h3>
+          <a href="{{.Permalink}}"><button type="button" class="btn">
+              Check it out
+              <i class="fa-solid fa-arrow-right"></i></button></a>
+        </div>
+      </div>
+    {{- end }}
+    {{- if eq .Params.Cover.position  "right" }}
+      <div class="flex flex-col-reverse sm:flex-row gap-6 mb-14">
+        <div class="w-full sm:w-1/2">
+          <h1 class="text-xl sm:text-4xl font-bold mb-2 sm:mb-4">
+          {{.Params.Title}}
+          </h1>
+          <h2 class="text-lg sm:text-3xl font-medium mb-6">
+            {{.Params.SubTitle}}
+          </h2>
+          <h3 class="text-base text-bakery-subheading mb-12">
+            {{ .Params.Description }}
+          </h3>
+          <a href="{{.Permalink}}"><button type="button" class="btn">
+              Check it out
+              <i class="fa-solid fa-arrow-right"></i></button></a>
+        </div>
+        <img src="{{.Params.Cover.image}}" alt="{{.Params.Cover.Alt}}" class="w-full md:object-cover sm:w-1/2">
+
+      </div>
+    {{- end }}
+  
+  {{ end }}

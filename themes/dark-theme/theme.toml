@@ -1,0 +1,53 @@
+name = "dark-theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "A fast, clean, responsive Hugo theme"
+homepage = "http://example.com/"
+
+
+
+tags = [
+  "responsive",
+  "simple",
+  "clean",
+  "light",
+  "dark",
+  "blog",
+  "minimalist",
+  "highlight.js",
+  "search"
+]
+features = [
+  "responsive",
+  "single-column",
+  "blog",
+  "cover-image",
+  "table-of-contents",
+  "opengraph",
+  "highlight.js",
+  "favicon",
+  "archive",
+  "share-icons",
+  "cover",
+  "multilingual",
+  "social-icons",
+  "minified-assets",
+  "theme-toggle",
+  "menu-location-indicator",
+  "scroll-to-top",
+  "search"
+]
+min_version = "0.83.0"
+
+[author]
+  name = "yejia young"
+  homepage = "https://github.com/adityatelange/"
+
+
+
+# If porting an existing theme
+[original]
+  name = "Paper"
+  author = "nanxiaobei"
+  homepage = "https://github.com/nanxiaobei"
+  repo = "https://github.com/nanxiaobei/hugo-paper/"

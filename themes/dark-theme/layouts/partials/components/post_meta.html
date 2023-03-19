@@ -1,0 +1,55 @@
+{{- $scratch := newScratch }}
+<div class="article-header">
+    <div class="avatar">
+        <img src="{{.Site.Params.avatar}}">
+    </div>
+    <div class="info">
+        <div class="author">
+            <span class="name">{{.Page.Params.author}}</span>
+            <span class="author-label">{{ .Page.Params.lable }}</span>
+        </div>
+        <div class="meta-info">
+            <div class="article-meta-info">
+                <span class="article-date article-meta-item">
+                    <i class="fa fa-pen"></i>&nbsp;
+                    <span class="pc">{{ .Page.Params.Date | time.Format ":date_long"}}</span>
+                </span>
+                <span class="article-date article-meta-item">
+                    <i class="fa fa-edit"></i>&nbsp;
+                    <span class="pc">{{ .Page.Params.lastmod | time.Format ":date_long"}}</span>
+                </span>
+                <div class="article-categories article-meta-item">
+                    <span class="fa fa-folder-open"></span>
+                    {{ range .Params.categories }}
+                    <a href="{{ (urlize (printf "categories/%s" . )) | absURL }}/">{{ . }}</a>&nbsp;
+                    {{ end }}
+                </div>
+                
+                {{ if .Params.tags }}
+                <span class="article-tags article-meta-item">
+                    <i class="fa fa-tag"></i>&nbsp;
+                    <ul>
+                        {{ range .Params.tags }}
+                        <li>
+                        #<a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">{{ . }}</a>&nbsp;
+                        </li>
+                        {{ end }}
+                    </ul>
+                </span>
+                {{ end }}
+                <span class="article-wordcount article-meta-item">
+                    <i class="fa fa-book"></i>&nbsp;<span>{{ .Content | countwords }} Words</span>
+                </span>
+                <span class="article-min2read article-meta-item">
+                    <i class="fa fa-clock"></i>&nbsp;<span>{{.ReadingTime}} mins</span>
+                </span>
+                <span class="article-pv article-meta-item">
+                    <i class="fa-regular fa-eye"></i>&nbsp;
+                    <span id="busuanzi_value_page_pv">
+                    </span>
+                </span>
+
+            </div>
+        </div>
+    </div>
+</div>
