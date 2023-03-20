@@ -16,9 +16,9 @@ cover:
     caption: "<text>"
     relative: false # To use relative path for cover image, used in hugo Page-bundles
 ---
-# Hugo Introduction
+## Hugo Introduction
 
-## Basic Description
+### Basic Description
 
 Hugo is a popular open-source static site generator that allows you to create fast and efficient websites without relying on a database or server-side scripting. The structure of a Hugo site includes the following elements:
 
@@ -45,7 +45,7 @@ Hugo is a popular open-source static site generator that allows you to create fa
 
 It's worth to notice that Config file [config.toml] we define a lot of global variables, I will reveal in the next section, including how to introduce custom theme.
 
-## Hugo Theme
+### Hugo Theme
 
 Hugo themes are collections of templates, stylesheets, and other assets that determine the appearance and behavior of a Hugo website. The structure of a Hugo theme typically includes the following elements:
 
@@ -63,7 +63,7 @@ By following this structure, Hugo themes can be easily shared and reused, allowi
 ## How hugo run the application?
 We mainly focus on **layouts** folder. In _default folder, baseof.html is the entry port, index.html is the home
 
-# Preparation
+### Preparation
 Before go through the custom theme, here are some MUST TO READ documents you need to read.
 * [Templating](https://gohugo.io/templates/)
 * [page-bundles](https://gohugo.io/content-management/page-bundles/)
@@ -78,18 +78,18 @@ Before go through the custom theme, here are some MUST TO READ documents you nee
 * [Function .Param](https://gohugo.io/functions/param/)
 
 - - - 
-### Config.toml file
+## Config.toml file
 
 In config.toml, we can setup theme and define all the global variables, such as website url, website name, your name as the author, social media and so on.
 
-#### Introduce theme
+### Introduce theme
 
 {{< highlight Toml "linenos=table" >}}
 theme = 'dark-theme'  # the name should match your theme's name in the theme folder
 {{< /highlight >}}
 
 
-#### Setup menu
+### Setup menu
 {{< highlight Toml "linenos=table" >}}
 # setup menu
 sectionPagesMenu = "main"

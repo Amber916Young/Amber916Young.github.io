@@ -16,7 +16,7 @@ cover:
     alt: "<alt text>"
     caption: "<text>"
 ---
-# Create a custom page: about me 
+## Create a custom page: about me 
 About page is not the default page, easily we can consider about.html is a other type of posts, so we need to create a post: the  command-line interface (CLI) is:
 {{< highlight bash "linenos=table" >}}
 hugo new posts/<post-name>.md
@@ -24,10 +24,12 @@ hugo new posts/<post-name>.md
 in this case, we need to type:
 {{< highlight bash "linenos=table" >}}
 hugo new about/_index.md
+
 # create a new folder named about, we separate posts folder(default blog folder) and custom folder
+
 {{< /highlight >}} 
 you might ask why is md file not HTML? In fact, md(markdown) file can store the metadata of your article, about page is a special type of blog. when the application runs, the program will search _index file at first. 
-## Page structure 
+### Page structure 
 
 <div class="polaroid">
 <a

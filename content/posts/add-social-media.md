@@ -17,7 +17,7 @@ cover:
     alt: "<alt text>"
     caption: "<text>"
 ---
-# Add your social media in config.toml
+## Add your social media in config.toml
 You can add social media in HTML directly, also, can use config file which is easy to change every time you want to update.
 
 {{< highlight toml "linenos=table" >}}
@@ -36,7 +36,7 @@ You can add social media in HTML directly, also, can use config file which is ea
       icon = "fa-brands fa-instagram fa-lg" 
 
 {{< /highlight >}}
-## Using in HTML page
+### Using in HTML page
 Because header and footer both show social media, we just write a singe HTML, them import to some places you want to display.
 {{< highlight html "linenos=table" >}}
 {{ with $.Site.Params.social }}

@@ -18,7 +18,7 @@ cover:
     caption: "<text>"
 ---
 
-# How to Deploy to Github
+## How to Deploy to Github
 To deploy your Hugo site to GitHub Pages, you can follow these steps:
 1. First update baseURL in config.yaml
     baseURL: https://www.username.github.io 
@@ -32,6 +32,10 @@ hugo
         <img src="https://i.328888.xyz/2023/03/20/PtUud.png"/>
     </a>
 </div>
+Go to public folder
+{{< highlight bash "linenos=table" >}}
+cd piblic
+{{< /highlight >}}
 
 2. Second, create a new repository on GitHub that will hold your website files. Make sure to name the repository in the format yourusername.github.io, where yourusername is your GitHub username.
 Don't forget add **github.io**
@@ -56,7 +60,7 @@ Don't forget add **github.io**
 
 
 
-3. Next, navigate to the root of your Hugo project directory in a terminal window or command prompt.
+3. Next, navigate to the root of your Hugo project directory in a terminal window or command prompt. (we already in public folder)
 4. Initialize a new Git repository by running the command:
 
 
@@ -79,7 +83,8 @@ git commit -m "Initial commit"
 7. Set the remote repository to your new GitHub Pages repository by running the command:
 
 {{< highlight bash "linenos=table" >}}
-git remote add origin https://github.com/yourusername/yourusername.github.io.git
+git remote add origin 
+https://github.com/yourusername/yourusername.github.io.git
 {{< /highlight >}}
 Replace 'yourusername' with your actual GitHub username.
 
@@ -114,7 +119,11 @@ git checkout -b master
 git add ./
 git commit -m "Initial commit"
 git branch -M master
-git remote add origin https://github.com/yourusername/yourusername.github.io.git
+
+git remote add origin
+ https://github.com/yourusername/yourusername.github.io.git
+
+
 git push -u origin master
 {{< /highlight >}}
 
@@ -140,8 +149,8 @@ git commit -m "commentxxxx"
 git push 
 {{< /highlight >}}
 
-# Problem you might meet
-## https://yourname.github.io/ is 404
+## Problem you might meet
+### yourname.github.io is 404
 If you're experiencing a 404 error after deploying your Hugo site to GitHub Pages, there are a few things you can try:
 
 * Check the spelling and capitalization of your repository name. Make sure it matches the URL you're using to access your site. For example, if your repository is named my-hugo-site, your site should be accessible at https://yourusername.github.io/my-hugo-site/.

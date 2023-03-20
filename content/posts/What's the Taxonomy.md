@@ -16,7 +16,7 @@ cover:
     alt: "<alt text>"
     caption: "<text>"
 ---
-# 👀 what's the Taxonomy
+## 👀 What's the Taxonomy?
 In Hugo, a taxonomy is a way of organizing your content based on specific attributes or categories. Taxonomies are used to create grouping mechanisms for your content, allowing you to easily organize, sort, and filter your pages based on common characteristics.
 
 Hugo supports several types of taxonomies, including:
@@ -72,7 +72,7 @@ Additionally, If the draft is false, the post will not display in the list page.
 
 - - -
 
-# Where to display all my blogs/posts/articles?
+## Where to display all my blogs/posts/articles?
 
 list.html is a template file used in Hugo, which is a popular static site generator. In Hugo, a list page refers to a page that displays a list of content items from a specific section or taxonomy.
 
@@ -134,7 +134,7 @@ archiveItem.html is another template, you also write your post list in the same 
 
 ---
 
-# Where to display my blogs/posts/articles according to a tag or category?
+## Where to display my blogs/posts/articles according to a tag or category?
 After we add [taxonomies] to config.toml, Hugo will help us to category, still use list.html to display some specific posts.
 <div class="flex">
   <div class="polaroid" style="width:40%" >

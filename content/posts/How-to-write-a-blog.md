@@ -18,7 +18,7 @@ cover:
     caption: "<text>"
 ---
 
-# How to Write a Blog in Hugo
+## How to Write a Blog in Hugo
 In hugo, the blogs/articles/posts all store in the content/posts/ folder.
 
 <div class="polaroid" style="width:20%" >
@@ -39,7 +39,7 @@ hugo new posts/How-to-write-a-blog.md
 "posts" means, create a md file under the posts folder(is also default blog folder)
 
 
-# Structure of Post page
+### Structure of Post page
 
 <div class="polaroid" style="width:100%" >
    <a data-fancybox="gallery" data-src="https://i.328888.xyz/2023/03/20/PUsnA.png">
@@ -56,7 +56,7 @@ This page is like a jigsaw puzzle with several chapters combined, this is done s
                 
 
 
-## Count how many words in your blog
+### Count how many words in your blog
 
 This is built-in function [**countwords**](https://gohugo.io/functions/countwords/).
 
@@ -68,7 +68,7 @@ This is built-in function [**countwords**](https://gohugo.io/functions/countword
 
 
 
-# What's the markdowm(MD) file?
+## What's the markdowm(MD) file?
 
 In Hugo, Markdown (often abbreviated as MD) is a lightweight markup language used to create content for web pages. It allows you to write content using plain text and simple syntax that can be easily converted to HTML by Hugo. Markdown is a popular format for creating web content because it is easy to learn and write, and can be easily converted to HTML without the need for complex formatting tools. <br>
 <br>
@@ -78,7 +78,7 @@ Markdown files in Hugo typically have a .md extension and are stored in the cont
 
 Markdown files in Hugo can include additional metadata in the form of front matter, which is written in YAML, TOML or JSON format and placed at the beginning of the Markdown file. This metadata can be used to provide additional information about the content, such as the page's title, author, and publication date. <br><br>
 
-## Using HTML tags in MD file
+### Using HTML tags in MD file
 In hugo, you also can write HTML in MD file. Yeah, super convenient, right? As I mentioned in my first post, to display HTML tags in the md file requires configuration in the configuration file(config.toml).
 {{< highlight toml "linenos=table" >}}
 # allow md file shows HTML format
@@ -103,7 +103,7 @@ In hugo offical website, you also can find this [configuration](https://gohugo.i
   expiryDate = ["expiryDate"]
 {{< /highlight >}}
 
-### Permalinks
+## Permalinks
 In your site configuration, set a URL pattern for regular pages within a top-level section. This is recursive, affecting descendant regular pages.
 <br>
 The permalinks defined in your site configuration do not apply to section pages. To adjust the URL for section pages, set url in front matter.

@@ -13,7 +13,6 @@
     }
   }
 
-
 let copyBTN = select('pre > code')
 
 if(copyBTN){
@@ -286,11 +285,68 @@ Array.prototype.forEach.call(highlightBlocks, addCopyButton);
       backDelay: 2000
     });
   }
-
-
-
-
-
 })()
+listenerUrl()
+const pass = "123"
+var PageUrl = ""
 
 
+function listenerUrl(){
+  var verifyUrl =  window.location.href
+  var myCookieValue = $.cookie("myPasswordToRead")
+  if(myCookieValue){
+    return
+  }
+  verifyUrlList = verifyUrl.split('/')
+  for(let i = 0;i <verifyUrlList.length;i++){
+    console.info(verifyUrlList[i] )
+    if(verifyUrlList[i] == "posts" ){
+      if(i === verifyUrlList.length - 2){
+        break
+      }
+      this.PageUrl = verifyUrl
+      verifyPass(verifyUrl,2)
+      break
+    }
+  }
+}  
+
+
+function enterPassword(){
+  var userInputPass = $("#pass").val()
+  if (userInputPass != null) {
+    if(userInputPass === pass){
+      $.cookie("myPasswordToRead",userInputPass, { expires: 7, path: "/" });
+      setTimeout(() => {
+        $("#popup").removeClass("z-index-9999");
+        $("#normal").removeClass("display-none");
+        $("body").removeClass("backgroundD9");
+        window.location.replace(PageUrl);
+      }, "1000");
+    }else{
+    }
+  }
+}
+
+function verifyPass(url,type){
+  PageUrl = url
+  var myCookieValue = $.cookie("myPasswordToRead")
+  if(myCookieValue){
+    window.location.replace(PageUrl);
+    return
+  }
+  $("body").addClass("backgroundD9");
+  $("#normal").addClass("display-none");
+  $("#popup").addClass("z-index-9999");
+  $("#popup").html('<section class="s:mt-10 backgroundD9" > <div class="closeIcon" onclick="closePassBox('+type+')"><i class="fa-solid fa-xmark fa-2xl" <i class="fa-solid fa-xmark fa-2xl" style="color: #0e1c34;"></i></i></div><div class="flex flex-col sm:flex-row "> <div class="h-screen text-center" id="passwordContent"> <img src="https://i.328888.xyz/2023/03/20/P9ilt.png" > <h1 >Please enter password  <br> to view my portfolio</h1> <p>To View, Please enter the Password</p> <div class=" ssm:mt-10 mt-4 mb-8 " id="passwordSec"> <input type="password" id="pass" name="password" minlength="8" required  placeholder="Enter Password"> <button  type="button" onclick="enterPassword()">Let\'s go</button> </input> </div> </div> </div> </section>')
+}
+function closePassBox(type){
+  $("body").removeClass("backgroundD9");
+  $("#popup").removeClass("z-index-9999");
+  $("#normal").removeClass("display-none");
+  $("#popup").html("");
+  if(type === 2){
+    window.location.replace("/posts");
+  }
+ 
+}

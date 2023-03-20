@@ -18,7 +18,7 @@ cover:
     caption: "<text>"
 ---
 
-# How to Calculate the Number of Views
+## How to Calculate the Number of Views
 
 Busuanzi is a third-party visitor counter and statistics tool that you can use with Hugo to track visitor traffic to your site. Here's how to set up Busuanzi in Hugo:
 
@@ -39,7 +39,7 @@ Views <span id="busuanzi_value_site_pv"></span>times</span>
 
 Note that Busuanzi is a third-party tool and may have limitations or restrictions on usage depending on your site's traffic volume. Be sure to read the Busuanzi documentation carefully and follow any usage guidelines or restrictions to avoid any issues with your site's performance or reliability.
 
-## Add busuanzi in Config.toml
+### Add busuanzi in Config.toml
 
 
 {{< highlight toml "linenos=table" >}}

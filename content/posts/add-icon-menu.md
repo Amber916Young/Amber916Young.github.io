@@ -17,7 +17,7 @@ cover:
     alt: "<alt text>"
     caption: "<text>"
 ---
-# How to custom Icon in menu
+## How to custom Icon in menu
 In the [Hugo introduction] blog, I have shown how the menu is added in hugo. Following the previous article on how to customize social media, did you think that to display the menu you would need to add an icon property? 😂😂😂 <br>
 Head to config.toml file,
 {{< highlight Toml "linenos=table" >}}
@@ -61,7 +61,7 @@ In the menu.html, just using hugo syntax {{.Pre}} to display icon.
 {{ end }}
 {{< /highlight >}}
 
-# How to add active class in menu
+## How to add active class in menu
 This is an additional attribute that highlights a menu when it is clicked on.
 <div class="polaroid">
     <a

@@ -1238,6 +1238,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin: auto;
   }
 
+
   .sm\:my-14{
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
@@ -1387,12 +1388,21 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1;
   }
 }
-
+@media only screen and (max-width: 734px) {
+	aside{
+    visibility: hidden;
+  }
+  body .page-content{
+    width: 100%;
+  }
+}
 @media (min-width: 1024px){
   .lg\:block{
     display: block;
   }
-
+  .page-content{
+    width: 80%;
+  }
   .lg\:text-9xl{
     font-size: 8rem;
     line-height: 1;
