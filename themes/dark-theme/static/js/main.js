@@ -324,6 +324,12 @@ function enterPassword(){
         window.location.replace(PageUrl);
       }, "1000");
     }else{
+      // wrong pass
+      $("#passwordSec").addClass("shakePass",1000)
+      setTimeout(() => {
+      $("#passwordSec").removeClass("shakePass",1000)
+       
+      }, "500");
     }
   }
 }
