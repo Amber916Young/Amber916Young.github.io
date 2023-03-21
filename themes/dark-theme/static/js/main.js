@@ -317,11 +317,12 @@ function enterPassword(){
   if (userInputPass != null) {
     if(userInputPass === pass){
       $.cookie("myPasswordToRead",userInputPass, { expires: 7, path: "/" });
+    
       setTimeout(() => {
+        window.location.replace(PageUrl);
         $("#popup").removeClass("z-index-9999");
         $("#normal").removeClass("display-none");
         $("body").removeClass("backgroundD9");
-        window.location.replace(PageUrl);
       }, "1000");
     }else{
       // wrong pass
