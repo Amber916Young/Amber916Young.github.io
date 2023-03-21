@@ -798,8 +798,8 @@ header{
 .closeIcon{
 	display: flex;
     justify-content: end;
-    margin-top: 30px;
-    margin-right: 20px;
+    padding-top: 30px;
+	padding-right: 20px;
 }
 .closeIcon:hover{
 	cursor: pointer;
