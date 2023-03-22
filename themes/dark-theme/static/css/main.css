@@ -825,4 +825,9 @@ header{
 
   .comment-block{
 	margin-top: 10rem;
+	width: 80%;
+  }
+
+  .pagination{
+	width: 80%;
   }
