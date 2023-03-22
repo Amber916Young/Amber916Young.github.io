@@ -19,6 +19,7 @@ paginatePath = "page"
 # enable Emoji; see emoji-cheat-sheet.com
 enableEmoji = false
 
+disqus_shortname = "https-amber916young-github-io"
 
 [taxonomies]
   tag = "tags"
