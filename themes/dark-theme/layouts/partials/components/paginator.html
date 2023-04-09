@@ -1,8 +1,9 @@
 <div class="paginator" >
     {{ if .NextInSection }}
-        <a class="prev btn" href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }}</a>
+        <a class="prev btn" href="{{ .NextInSection.Permalink }}"><i class="fa-solid fa-arrow-left"></i>{{ .NextInSection.Title }} </a>
     {{ end }}
     {{ if .PrevInSection }}
-        <a class="next btn" href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a>
+        <a class="next btn" href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }} <i class="fa-solid fa-arrow-right"></i></a>
+       
     {{ end }}
 </div>

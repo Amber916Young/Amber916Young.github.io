@@ -66,7 +66,8 @@ Go the the footer.html, we add the default html in our custom footer.
     <span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
     </span>|
     <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
-        <i class="fa-solid fa-eye"></i>Visitor&nbsp;<span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+        <i class="fa-solid fa-eye"></i>Visitor&nbsp;
+        <span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
 </span>
 {{< /highlight >}}
 

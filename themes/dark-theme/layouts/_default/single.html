@@ -6,17 +6,20 @@
           <div class="page-metadata">
             {{- partial "components/post_meta.html" . -}}
           </div>
-          <div style="display: flex;">
+          <div style="display: flex; " class="sm:mt-10">
             <div class="page-content">
               {{ .Content }}
             </div>
-            <aside style=" width: 20%;position: fixed; right: 5%;">
+            <aside style=" width: 20%;position: fixed; right: 5%; ">
               {{ .TableOfContents }}
             </aside>
           </div>
 
           <div class="pagination">      
             {{-  partial "components/paginator.html" . -}}
+          </div>
+          <div class="comment-block">      
+            {{-  partial "components/comment.html" . -}}
           </div>
         </div>
       </div>

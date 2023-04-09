@@ -2,8 +2,7 @@ baseURL = 'https://amber916young.github.io/'
 languageCode = 'en-us'
 title = "tothemoon's blog"
 theme = 'dark-theme'
-description = "Hi I'am xx"
-copyright = 'Everything is mine'
+copyright = 'All rights reserved'
 
 
 # If false, English tags like `Getting Started` will be converted to `getting-started
@@ -39,22 +38,19 @@ enableEmoji = false
 [params]
 	keywords = "blog,life,code,desgin"
   author = "tothemoon"
-  homepage = "homepage"
+  homepage = "tothemoon"
   email = "myeamil"
   avatar = "https://i.328888.xyz/2023/03/19/Pf8MH.png"
-  description = "description here"
-  aboutImage = "https://photo.tuchong.com/7194943/f/1141846321.jpg"
+  description = "Design by yejiaYang. "
+  aboutImage = "https://i.328888.xyz/2023/03/19/Pf8MH.png"
   [[params.social]]
-      url   = "https://twitter.com/"
-      icon  = "fa-brands fa-twitter fa-lg"
+      url   = "https://leetcode.com/BirdyYang/"
+      icon  = "fa-solid fa-bug  fa-lg" 
   [[params.social]]
-      url   = "https://facebook.com/"
-      icon  = "fa-brands fa-facebook fa-lg" 
-  [[params.social]]
-      url   = "https://linkedin.com/"
+      url   = "https://www.linkedin.com/in/yejia-yang-11105722a/"
       icon  = "fa-brands fa-linkedin fa-lg"
   [[params.social]]
-      url = "https://linkedin.com/"  
+      url = "https://www.instagram.com/tothemoonbird/"  
       icon = "fa-brands fa-instagram fa-lg" 
   [params.busuanzi_count]
     enable = true
