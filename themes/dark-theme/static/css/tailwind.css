@@ -1064,7 +1064,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .overlay {
-  background: #111111;
+  background: #fdfffc;
   height: 0%;
   left: 0;
   opacity: 0;
@@ -1131,6 +1131,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 50px;
   position: relative;
   opacity: 0;
+  color: #ff9f1c;
 }
 
 .overlay ul li a {
