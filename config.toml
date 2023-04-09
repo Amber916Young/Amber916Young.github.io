@@ -48,6 +48,9 @@ disqus_shortname = "https-amber916young-github-io"
       url   = "https://leetcode.com/BirdyYang/"
       icon  = "fa-solid fa-bug  fa-lg" 
   [[params.social]]
+      url   = "https://github.com/Amber916Young"
+      icon  = "fa-brands fa-github  fa-lg" 
+  [[params.social]]
       url   = "https://www.linkedin.com/in/yejia-yang-11105722a/"
       icon  = "fa-brands fa-linkedin fa-lg"
   [[params.social]]
