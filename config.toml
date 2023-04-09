@@ -2,12 +2,7 @@ baseURL = 'https://amber916young.github.io/'
 languageCode = 'en-us'
 title = "tothemoon's blog"
 theme = 'dark-theme'
-<<<<<<< HEAD
 copyright = 'All rights reserved'
-=======
-description = "Hi, the template still updating, The test password is 123"
-copyright = 'Everything is mine'
->>>>>>> 85956745d78355c75f96876b89a7ee69df5cdd03
 
 
 # If false, English tags like `Getting Started` will be converted to `getting-started
