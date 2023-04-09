@@ -9,7 +9,7 @@ featured: true
 type: posts
 label: "orginal"
 author: tothemoon
-tags: ["tag1", "tag2"]
+tags: ["installation"]
 categories: ["tutorial","hugo"]
 cover:
     position: right
