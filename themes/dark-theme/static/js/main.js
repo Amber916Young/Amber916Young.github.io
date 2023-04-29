@@ -286,7 +286,7 @@ Array.prototype.forEach.call(highlightBlocks, addCopyButton);
     });
   }
 })()
-listenerUrl()
+// listenerUrl()
 const pass = "123"
 var PageUrl = ""
 

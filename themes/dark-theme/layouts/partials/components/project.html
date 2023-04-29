@@ -1,4 +1,4 @@
-  {{ range first 3 ( where .Site.RegularPages "Type" "posts" ) }}
+  {{ range first 3 ( where .Site.RegularPages  "Type" "in" (slice "posts" "videos") ) }}
 
   {{ if     eq .Params.Cover.image "null" }}
   <div class="flex flex-col sm:flex-row gap-6 mb-14">

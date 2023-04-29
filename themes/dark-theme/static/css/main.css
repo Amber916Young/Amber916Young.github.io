@@ -678,6 +678,11 @@ header{
     width: 100%;
     height: auto;
 }
+.article-header .infovideo {
+    padding: 2px 0;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
 .article-header .info .author {
     font-weight: 800;
     font-size: 1.18rem;
@@ -828,4 +833,15 @@ header{
 
   .pagination{
 	width: 80%;
+  }
+
+  .page-title{
+	text-align: center;
+	font-size: 2rem;
+	padding: 1rem 0;
+  }
+  .page-desc{
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 1rem 0;
   }

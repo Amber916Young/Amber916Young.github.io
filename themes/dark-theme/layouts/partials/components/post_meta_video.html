@@ -1,0 +1,44 @@
+{{- $scratch := newScratch }}
+<div class="article-header" style="justify-content:center;justify-items: center;">
+   
+    <div class="infovideo">
+     
+        <div class="meta-info">
+            <div class="article-meta-info">
+                <span class="article-date article-meta-item">
+                    <span class="pc">{{ .Page.Params.Date | time.Format ":date_long"}}</span>
+                </span>
+            <span class="article-date article-meta-item">
+                Post by&nbsp;
+                <span class="name" style="font-size: 1.2rem; font-weight: 800;">{{.Page.Params.author}}</span>&nbsp;&nbsp;
+            </span>
+                <div class="article-categories article-meta-item">
+                    <span class="fa fa-folder-open"></span>
+                    {{ range .Params.categories }}
+                    <a href="{{ (urlize (printf "categories/%s" . )) | absURL }}/">{{ . }}</a>&nbsp;
+                    {{ end }}
+                </div>
+                
+                {{ if .Params.tags }}
+                <span class="article-tags article-meta-item">
+                    <i class="fa fa-tag"></i>&nbsp;
+                    <ul>
+                        {{ range .Params.tags }}
+                        <li>
+                        #<a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">{{ . }}</a>&nbsp;
+                        </li>
+                        {{ end }}
+                    </ul>
+                </span>
+                {{ end }}
+            
+                <span class="article-pv article-meta-item">
+                    <i class="fa-regular fa-eye"></i>&nbsp;
+                    <span id="busuanzi_value_page_pv">
+                    </span>
+                </span>
+
+            </div>
+        </div>
+    </div>
+</div>
