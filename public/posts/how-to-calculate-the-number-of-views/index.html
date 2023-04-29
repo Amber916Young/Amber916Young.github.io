@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Design by yejiaYang. " />
+    <meta name="author" content="tothemoon">
+    <meta name="keywords" content="blog,life,code,desgin,yejiaYang,woman stem">
+
+    <title>How to Calculate the Number of Views | tothemoon&#39;s blog</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="icon"  type="image/x-icon"  href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/tailwind.css?v=1" /> 
+    <link rel="stylesheet" href="/css/main.css?v=1" /> 
+    <link rel="stylesheet" href="/css/404.css" /> 
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://kit.fontawesome.com/237a634d14.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+</head><body class=" bg-portfolio-bg-lighter-gray text-portfolio-text-light-gray">
+
+        <div id="popup"></div>
+        <div id="normal">
+            <header  >
+    <nav  id="top-nav"   class=" fixed z-10 w-full py-4 sm:py-6 text-portfolio-text-light-gray bg-portfolio-bg-lighter-gray">
+      <div   id="menu" class="container flex flex-wrap items-center">
+        
+        <div class="flex gap-4">
+  
+    <a href="https://leetcode.com/BirdyYang/"  target="_blank">
+      <i class="fa-solid fa-bug  fa-lg"></i>
+    </a>
+  
+    <a href="https://github.com/Amber916Young"  target="_blank">
+      <i class="fa-brands fa-github  fa-lg"></i>
+    </a>
+  
+    <a href="https://www.linkedin.com/in/yejia-yang-11105722a/"  target="_blank">
+      <i class="fa-brands fa-linkedin fa-lg"></i>
+    </a>
+  
+    <a href="https://www.instagram.com/tothemoonbird/"  target="_blank">
+      <i class="fa-brands fa-instagram fa-lg"></i>
+    </a>
+  
+</div>
+        
+        <ul class=" hidden sm:flex flex-1 justify-end items-center gap-6 lowercase">
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/"  title="Home">
+    <li class="hover  ">
+      <i class="fa-solid fa-house"></i>
+      Home
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/posts/"  title="My Blog">
+    <li class="hover    active ">
+      <i class="fa-solid fa-paper-plane"></i>
+      My Blog
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/"  title="Tags">
+    <li class="hover  ">
+      <i class="fa-solid fa-tag"></i>
+      Tags
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/about/"  title="Abouts">
+    <li class="hover  ">
+      <i class="fa-sharp fa-solid fa-medal"></i>
+      Abouts
+    </li>
+</a>
+</ul>
+        
+        <div class="flex sm:hidden flex-1 justify-end">
+          <button id="toggle" class="button_container">
+            <i class="fa-solid fa-bars"></i>           
+          </button>
+        </div>
+      </div>
+      <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/"  title="Home">
+    <li class="hover  ">
+      <i class="fa-solid fa-house"></i>
+      Home
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/posts/"  title="My Blog">
+    <li class="hover    active ">
+      <i class="fa-solid fa-paper-plane"></i>
+      My Blog
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/"  title="Tags">
+    <li class="hover  ">
+      <i class="fa-solid fa-tag"></i>
+      Tags
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/about/"  title="Abouts">
+    <li class="hover  ">
+      <i class="fa-sharp fa-solid fa-medal"></i>
+      Abouts
+    </li>
+</a>
+</ul>
+        </nav>
+      </div>
+    </nav>
+  </header><main class="min-h-full">
+<section class="s:mt-10">
+    <div class="container sm:my-14">
+      <div class="flex flex-col sm:flex-row ">  
+        <div class="w-full sm:w-10 sm:mt-10">
+          <div class="page-metadata">
+<div class="article-header">
+    <div class="avatar">
+        <img src="https://i.328888.xyz/2023/03/19/Pf8MH.png">
+    </div>
+    <div class="info">
+        <div class="author">
+            <span class="name">tothemoon</span>
+            <span class="author-label"></span>
+        </div>
+        <div class="meta-info">
+            <div class="article-meta-info">
+                <span class="article-date article-meta-item">
+                    <i class="fa fa-pen"></i>&nbsp;
+                    <span class="pc">March 19, 2023</span>
+                </span>
+                <span class="article-date article-meta-item">
+                    <i class="fa fa-edit"></i>&nbsp;
+                    <span class="pc">March 19, 2023</span>
+                </span>
+                <div class="article-categories article-meta-item">
+                    <span class="fa fa-folder-open"></span>
+                    
+                    <a href="https://amber916young.github.io/categories/tutorial/">tutorial</a>&nbsp;
+                    
+                    <a href="https://amber916young.github.io/categories/hugo/">hugo</a>&nbsp;
+                    
+                </div>
+                
+                
+                <span class="article-tags article-meta-item">
+                    <i class="fa fa-tag"></i>&nbsp;
+                    <ul>
+                        
+                        <li>
+                        #<a href="https://amber916young.github.io/tags/busuanzi/">busuanzi</a>&nbsp;
+                        </li>
+                        
+                        <li>
+                        #<a href="https://amber916young.github.io/tags/plugin/">plugin</a>&nbsp;
+                        </li>
+                        
+                    </ul>
+                </span>
+                
+                <span class="article-wordcount article-meta-item">
+                    <i class="fa fa-book"></i>&nbsp;<span>356 Words</span>
+                </span>
+                <span class="article-min2read article-meta-item">
+                    <i class="fa fa-clock"></i>&nbsp;<span>2 mins</span>
+                </span>
+                <span class="article-pv article-meta-item">
+                    <i class="fa-regular fa-eye"></i>&nbsp;
+                    <span id="busuanzi_value_page_pv">
+                    </span>
+                </span>
+
+            </div>
+        </div>
+    </div>
+</div></div>
+          <div style="display: flex; " class="sm:mt-10">
+            <div class="page-content">
+              <h2 id="how-to-calculate-the-number-of-views">How to Calculate the Number of Views</h2>
+<p>Busuanzi is a third-party visitor counter and statistics tool that you can use with Hugo to track visitor traffic to your site. Here&rsquo;s how to set up Busuanzi in Hugo:</p>
+<ol>
+<li>
+<p>First, go to the Busuanzi website (<a href="https://busuanzi.ibruce.info/">https://busuanzi.ibruce.info/</a>) and choose the style of the visitor counter you want to use. You can choose from several different styles and customize the text that appears alongside the counter.</p>
+</li>
+<li>
+<p>Once you&rsquo;ve selected your counter style, copy the HTML code provided by Busuanzi. This code should look something like this:</p>
+</li>
+</ol>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;busuanzi_container_site_pv&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>Views &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;busuanzi_value_site_pv&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;times&lt;/<span style="color:#f92672">span</span>&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="3">
+<li>
+<p>In your Hugo project, open the layout file where you want to add the Busuanzi counter. For example, if you want to add the counter to your site&rsquo;s footer, you might open the footer.html layout file.</p>
+</li>
+<li>
+<p>Paste the Busuanzi HTML code into the layout file where you want the counter to appear. Be sure to replace any existing code in that location, or add it to a new location if you&rsquo;re creating a new element.</p>
+</li>
+<li>
+<p>Save the layout file and rebuild your Hugo site. The Busuanzi counter should now appear on your site.</p>
+</li>
+</ol>
+<p>Note that Busuanzi is a third-party tool and may have limitations or restrictions on usage depending on your site&rsquo;s traffic volume. Be sure to read the Busuanzi documentation carefully and follow any usage guidelines or restrictions to avoid any issues with your site&rsquo;s performance or reliability.</p>
+<h3 id="add-busuanzi-in-configtoml">Add busuanzi in Config.toml</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">busuanzi_count</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">site_uv</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">site_pv</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">page_pv</span> = <span style="color:#66d9ef">true</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="where-to-use-it">Where to use it?</h2>
+<h3 id="in-footerhtml">In footer.html</h3>
+<p>Go the the footer.html, we add the default html in our custom footer.</p>
+<div class="polaroid" style="width:70%" >
+   <a data-fancybox="gallery" data-src="https://i.328888.xyz/2023/03/20/PUKfV.png">
+        <img src="https://i.328888.xyz/2023/03/20/PUKfV.png"/>
+    </a>
+</div>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;busuanzi_container_site_uv&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;busuanzi_container_site_uv&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fa-solid fa-chart-simple&#34;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt;
+</span></span><span style="display:flex;"><span>    TotalView&amp;nbsp;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;busuanzi_value_site_uv&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;busuanzi_value_site_uv&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">span</span>&gt;|
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;busuanzi_container_site_pv&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;busuanzi_container_site_pv&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fa-solid fa-eye&#34;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt;Visitor&amp;nbsp;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;busuanzi_value_site_pv&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;busuanzi_value_site_pv&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">span</span>&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p><strong>Note</strong> id and class you cannot define by yourself, but you can change the icon.</p>
+<div class="polaroid" style="width:70%" >
+   <a data-fancybox="gallery" data-src="https://i.328888.xyz/2023/03/20/PULjd.png">
+        <img src="https://i.328888.xyz/2023/03/20/PULjd.png"/>
+    </a>
+    <div class="container">
+    <p> Implement pulgin successfully </p>
+    </div>
+</div>
+<h3 id="in-post-page-post_metahtml">In post page (post_meta.html)</h3>
+<p>In blog page, we need to know how many users view our article. Go the post_meta.html,
+Just add only one line.</p>
+<div class="polaroid" style="width:70%" >
+   <a data-fancybox="gallery" data-src="https://i.328888.xyz/2023/03/20/PnZoL.png">
+        <img src="https://i.328888.xyz/2023/03/20/PnZoL.png"/>
+    </a>
+</div>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;busuanzi_value_page_pv&#34;</span>&gt; &lt;/<span style="color:#f92672">span</span>&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+            </div>
+            <aside style=" width: 20%;position: fixed; right: 5%; ">
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-to-calculate-the-number-of-views">How to Calculate the Number of Views</a>
+      <ul>
+        <li><a href="#add-busuanzi-in-configtoml">Add busuanzi in Config.toml</a></li>
+      </ul>
+    </li>
+    <li><a href="#where-to-use-it">Where to use it?</a>
+      <ul>
+        <li><a href="#in-footerhtml">In footer.html</a></li>
+        <li><a href="#in-post-page-post_metahtml">In post page (post_meta.html)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </aside>
+          </div>
+          <div class="pagination"><div class="paginator" >
+    
+        <a class="prev btn" href="https://amber916young.github.io/posts/how-to-deploy-to-github/"><i class="fa-solid fa-arrow-left"></i>How to Deploy to Github </a>
+    
+    
+        <a class="next btn" href="https://amber916young.github.io/posts/how-to-write-a-blog/">How to Write a Blog in Hugo <i class="fa-solid fa-arrow-right"></i></a>
+       
+    
+</div></div>
+          <div class="comment-block">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    (function() {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+    
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = '';
+        dsq.src = '//https-amber916young-github-io.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></div>
+        </div>
+      </div>
+      </div>
+  </section>
+                </main><footer class="bg-portfolio-bg-darker-gray">
+    <div class="container flex flex-col sm:flex-row justify-between gap-y-10 sm:gap-4 py-14">
+    <div class="flex-1">
+      
+      <h4 class="font-bold mb-4 text-lg">Copyright© All rights reserved</h4>
+      <p class="text-sm mb-2"> 
+        <span id="js-year"></span> - tothemoon
+      </p>
+      <p class="text-sm mb-4">Design by yejiaYang. </p>
+      
+        <div class="text-sm">
+          <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+            <i class="fa-solid fa-chart-simple"></i>
+            TotalView&nbsp;
+            <span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+          </span>|
+          <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+            <i class="fa-solid fa-eye"></i>
+            Visitor&nbsp;
+            <span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+          </span>
+      </div>
+    </div>
+
+
+
+    
+    <div class="flex-1">
+      <h4 class="font-bold mb-4 text-lg">Quick links</h4>
+      <ul class="list-none text-sm">
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/"  title="Home">
+    <li class="hover  ">
+      <i class="fa-solid fa-house"></i>
+      Home
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/posts/"  title="My Blog">
+    <li class="hover    active ">
+      <i class="fa-solid fa-paper-plane"></i>
+      My Blog
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/"  title="Tags">
+    <li class="hover  ">
+      <i class="fa-solid fa-tag"></i>
+      Tags
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/about/"  title="Abouts">
+    <li class="hover  ">
+      <i class="fa-sharp fa-solid fa-medal"></i>
+      Abouts
+    </li>
+</a>
+</ul>
+    </div>
+    
+    <div class="flex-1">        
+      <h4 class="font-bold mb-4 text-lg">Contact me</h4>
+      <a href="mailto:frygucki@gmail.com?subject=Hello" class="text-sm hover">youngyejia@163.com</a>
+      <div class="flex gap-4 mt-4">
+  
+    <a href="https://leetcode.com/BirdyYang/"  target="_blank">
+      <i class="fa-solid fa-bug  fa-lg"></i>
+    </a>
+  
+    <a href="https://github.com/Amber916Young"  target="_blank">
+      <i class="fa-brands fa-github  fa-lg"></i>
+    </a>
+  
+    <a href="https://www.linkedin.com/in/yejia-yang-11105722a/"  target="_blank">
+      <i class="fa-brands fa-linkedin fa-lg"></i>
+    </a>
+  
+    <a href="https://www.instagram.com/tothemoonbird/"  target="_blank">
+      <i class="fa-brands fa-instagram fa-lg"></i>
+    </a>
+  
+</div>
+    </div>
+  </div>
+</footer>
+<button class="scrollToTopBtn showBtn">
+    <i class="fa-solid fa-plane-up"></i>
+</button>
+        </div><script src="/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/particles.min.js"></script>
+<script src="/js/typed/typed.min.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<script src="/js/main.js?v=2"></script></body>
+</html>

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Design by yejiaYang. " />
+    <meta name="author" content="tothemoon">
+    <meta name="keywords" content="blog,life,code,desgin,yejiaYang,woman stem">
+
+    <title>Hugo introduction | tothemoon&#39;s blog</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="icon"  type="image/x-icon"  href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/tailwind.css?v=1" /> 
+    <link rel="stylesheet" href="/css/main.css?v=1" /> 
+    <link rel="stylesheet" href="/css/404.css" /> 
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://kit.fontawesome.com/237a634d14.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+</head><body class=" bg-portfolio-bg-lighter-gray text-portfolio-text-light-gray">
+
+        <div id="popup"></div>
+        <div id="normal">
+            <header  >
+    <nav  id="top-nav"   class=" fixed z-10 w-full py-4 sm:py-6 text-portfolio-text-light-gray bg-portfolio-bg-lighter-gray">
+      <div   id="menu" class="container flex flex-wrap items-center">
+        
+        <div class="flex gap-4">
+  
+    <a href="https://leetcode.com/BirdyYang/"  target="_blank">
+      <i class="fa-solid fa-bug  fa-lg"></i>
+    </a>
+  
+    <a href="https://github.com/Amber916Young"  target="_blank">
+      <i class="fa-brands fa-github  fa-lg"></i>
+    </a>
+  
+    <a href="https://www.linkedin.com/in/yejia-yang-11105722a/"  target="_blank">
+      <i class="fa-brands fa-linkedin fa-lg"></i>
+    </a>
+  
+    <a href="https://www.instagram.com/tothemoonbird/"  target="_blank">
+      <i class="fa-brands fa-instagram fa-lg"></i>
+    </a>
+  
+</div>
+        
+        <ul class=" hidden sm:flex flex-1 justify-end items-center gap-6 lowercase">
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/"  title="Home">
+    <li class="hover  ">
+      <i class="fa-solid fa-house"></i>
+      Home
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/posts/"  title="My Blog">
+    <li class="hover    active ">
+      <i class="fa-solid fa-paper-plane"></i>
+      My Blog
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/"  title="Tags">
+    <li class="hover  ">
+      <i class="fa-solid fa-tag"></i>
+      Tags
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/about/"  title="Abouts">
+    <li class="hover  ">
+      <i class="fa-sharp fa-solid fa-medal"></i>
+      Abouts
+    </li>
+</a>
+</ul>
+        
+        <div class="flex sm:hidden flex-1 justify-end">
+          <button id="toggle" class="button_container">
+            <i class="fa-solid fa-bars"></i>           
+          </button>
+        </div>
+      </div>
+      <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/"  title="Home">
+    <li class="hover  ">
+      <i class="fa-solid fa-house"></i>
+      Home
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/posts/"  title="My Blog">
+    <li class="hover    active ">
+      <i class="fa-solid fa-paper-plane"></i>
+      My Blog
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/"  title="Tags">
+    <li class="hover  ">
+      <i class="fa-solid fa-tag"></i>
+      Tags
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/about/"  title="Abouts">
+    <li class="hover  ">
+      <i class="fa-sharp fa-solid fa-medal"></i>
+      Abouts
+    </li>
+</a>
+</ul>
+        </nav>
+      </div>
+    </nav>
+  </header><main class="min-h-full">
+<section class="s:mt-10">
+    <div class="container sm:my-14">
+      <div class="flex flex-col sm:flex-row ">  
+        <div class="w-full sm:w-10 sm:mt-10">
+          <div class="page-metadata">
+<div class="article-header">
+    <div class="avatar">
+        <img src="https://i.328888.xyz/2023/03/19/Pf8MH.png">
+    </div>
+    <div class="info">
+        <div class="author">
+            <span class="name">Author Name</span>
+            <span class="author-label"></span>
+        </div>
+        <div class="meta-info">
+            <div class="article-meta-info">
+                <span class="article-date article-meta-item">
+                    <i class="fa fa-pen"></i>&nbsp;
+                    <span class="pc">March 7, 2023</span>
+                </span>
+                <span class="article-date article-meta-item">
+                    <i class="fa fa-edit"></i>&nbsp;
+                    <span class="pc">March 20, 2023</span>
+                </span>
+                <div class="article-categories article-meta-item">
+                    <span class="fa fa-folder-open"></span>
+                    
+                    <a href="https://amber916young.github.io/categories/tutorial/">tutorial</a>&nbsp;
+                    
+                    <a href="https://amber916young.github.io/categories/hugo/">hugo</a>&nbsp;
+                    
+                </div>
+                
+                
+                <span class="article-tags article-meta-item">
+                    <i class="fa fa-tag"></i>&nbsp;
+                    <ul>
+                        
+                        <li>
+                        #<a href="https://amber916young.github.io/tags/entry/">entry</a>&nbsp;
+                        </li>
+                        
+                        <li>
+                        #<a href="https://amber916young.github.io/tags/introduction/">introduction</a>&nbsp;
+                        </li>
+                        
+                    </ul>
+                </span>
+                
+                <span class="article-wordcount article-meta-item">
+                    <i class="fa fa-book"></i>&nbsp;<span>1114 Words</span>
+                </span>
+                <span class="article-min2read article-meta-item">
+                    <i class="fa fa-clock"></i>&nbsp;<span>6 mins</span>
+                </span>
+                <span class="article-pv article-meta-item">
+                    <i class="fa-regular fa-eye"></i>&nbsp;
+                    <span id="busuanzi_value_page_pv">
+                    </span>
+                </span>
+
+            </div>
+        </div>
+    </div>
+</div></div>
+          <div style="display: flex; " class="sm:mt-10">
+            <div class="page-content">
+              <h2 id="hugo-introduction">Hugo Introduction</h2>
+<h3 id="basic-description">Basic Description</h3>
+<p>Hugo is a popular open-source static site generator that allows you to create fast and efficient websites without relying on a database or server-side scripting. The structure of a Hugo site includes the following elements:</p>
+<ol>
+<li>Content folder: This folder contains all the content of your website, including pages, blog posts, images, and other media. The content is typically written in Markdown, which is a lightweight markup language.</li>
+<li>Static folder: This folder contains all the static assets of your website, including CSS stylesheets, JavaScript files, images, and other media files. These assets are not generated dynamically and are instead served as-is.</li>
+<li>Archetypes folder: This folder contains templates for creating new content files. You can create templates for different types of content, such as blog posts or pages, to make it easy to create new content quickly.</li>
+<li>Themes folder: This folder contains all the templates, stylesheets, and other assets for your website&rsquo;s theme. You can choose from a variety of pre-built themes or create your own.</li>
+<li>Config file: This file contains configuration settings for your Hugo site, such as the site title, language, and other global settings.</li>
+<li>Layouts folder: This folder contains templates for generating the HTML output of your website. You can create templates for different types of pages, such as the homepage, blog index, or individual blog posts.</li>
+<li>Data folder: This folder contains data files that are used to generate your website, such as site configuration settings, lists of authors or categories, or other metadata.</li>
+</ol>
+<div class="polaroid">
+ <a
+         data-fancybox="gallery"
+         data-src="https://i.328888.xyz/2023/03/15/JZSfx.png">
+        <img src="https://i.328888.xyz/2023/03/15/JZSfx.png"/>
+    </a>
+  <div class="container">
+    <p>Project structure </p>
+  </div>
+</div>
+<p><strong>In this case, we need to introduce our theme in theme folder, in terms of structure of theme, logically it the same as the default one.</strong></p>
+<p>It&rsquo;s worth to notice that Config file [config.toml] we define a lot of global variables, I will reveal in the next section, including how to introduce custom theme.</p>
+<h3 id="hugo-theme">Hugo Theme</h3>
+<p>Hugo themes are collections of templates, stylesheets, and other assets that determine the appearance and behavior of a Hugo website. The structure of a Hugo theme typically includes the following elements:</p>
+<ol>
+<li>Layouts folder: This folder contains the templates that generate the HTML output of your website. It is organized by the content type (e.g., posts, pages) and can include a variety of template files, such as base templates, list templates, and single templates.</li>
+<li>Static folder: This folder contains all the static assets of the theme, including CSS stylesheets, JavaScript files, images, and other media files. These assets are not generated dynamically and are instead served as-is.</li>
+<li>Assets folder: This folder contains the source files for the theme&rsquo;s stylesheets and scripts, as well as any other assets that need to be compiled or processed before being served to the browser.</li>
+<li>Config file: This file contains configuration settings for the theme, such as the theme name, author, and other global settings.</li>
+<li>Archetypes folder: This folder contains templates for creating new content files using the theme.</li>
+<li>i18n folder: This folder contains translation files for the theme in different languages.</li>
+<li>Shortcodes folder: This folder contains reusable snippets of code that can be used in content files to add custom functionality to the website.</li>
+<li>Partials folder: This folder contains smaller, reusable template files that can be included in other templates to reduce duplication and improve maintainability.</li>
+</ol>
+<p>By following this structure, Hugo themes can be easily shared and reused, allowing developers to quickly create new websites with a consistent look and feel.</p>
+<h2 id="how-hugo-run-the-application">How hugo run the application?</h2>
+<p>We mainly focus on <strong>layouts</strong> folder. In _default folder, baseof.html is the entry port, index.html is the home</p>
+<h3 id="preparation">Preparation</h3>
+<p>Before go through the custom theme, here are some MUST TO READ documents you need to read.</p>
+<ul>
+<li><a href="https://gohugo.io/templates/">Templating</a></li>
+<li><a href="https://gohugo.io/content-management/page-bundles/">page-bundles</a></li>
+<li><a href="https://gohugo.io/content-management/menus/">Hugo menu</a></li>
+<li><a href="https://gohugo.io/templates/pagination/">Pagination</a></li>
+<li><a href="https://gohugo.io/templates/partials/">Partial Templates</a></li>
+<li><a href="https://gohugo.io/templates/single-page-templates/">Single Page Templates</a></li>
+<li><a href="https://gohugo.io/templates/views/">Content View Templates</a></li>
+<li><a href="https://gohugo.io/content-management/taxonomies/">Taxonomies</a></li>
+<li><a href="https://gohugo.io/variables/">Variables and Params</a></li>
+<li><a href="https://gohugo.io/functions/format/">Function .Format</a></li>
+<li><a href="https://gohugo.io/functions/param/">Function .Param</a></li>
+</ul>
+<hr>
+<h2 id="configtoml-file">Config.toml file</h2>
+<p>In config.toml, we can setup theme and define all the global variables, such as website url, website name, your name as the author, social media and so on.</p>
+<h3 id="introduce-theme">Introduce theme</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Toml" data-lang="Toml"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#39;dark-theme&#39;</span>  <span style="color:#75715e"># the name should match your theme&#39;s name in the theme folder</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="setup-menu">Setup menu</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Toml" data-lang="Toml"><span style="display:flex;"><span><span style="color:#75715e"># setup menu</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sectionPagesMenu</span> = <span style="color:#e6db74">&#34;main&#34;</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">menu</span>]
+</span></span><span style="display:flex;"><span>  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Home&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;home&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;My Project&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;posts&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/posts/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;posts&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Tags&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;tag&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/tags/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Abouts&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;about&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;about&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/about/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">4</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Hugo provides some default menu: <strong><a href="https://gohugo.io/content-management/taxonomies/">posts,tags and categories</a></strong>. For the posts, generally it shows all your articles(blog), we will define the posts structure later.</p>
+<hr>
+<h2 id="common-js-and-css">Common js and css</h2>
+<div class="polaroid" style="width:30%" >
+ <a
+         data-fancybox="gallery"
+         data-src="https://i.328888.xyz/2023/03/18/MCUmJ.png">
+        <img src="https://i.328888.xyz/2023/03/18/MCUmJ.png"/>
+    </a>
+  <div class="container">
+    <p>HTML structure </p>
+  </div>
+</div>
+Every html page contains some same css files and js files, such as same header and footer. In Layout/partials folder, hugo helps us to generate head.html, footer.html already, but we can create another two html to write js and css.
+<div class="polaroid">
+<a
+         data-fancybox="gallery"
+         data-src="https://i.328888.xyz/2023/03/18/MCHPq.png">
+        <img src="https://i.328888.xyz/2023/03/18/MCHPq.png"/>
+    </a>
+</div>
+<p>Head and footer we use to write common navigation and footer parts;</p>
+<div class="polaroid">
+  <a
+         data-fancybox="gallery"
+         data-src="https://i.328888.xyz/2023/03/18/MCrNk.png">
+        <img src="https://i.328888.xyz/2023/03/18/MCrNk.png"/>
+    </a>
+</div>
+Header and footer-script are for common css and js.
+<div class="polaroid">
+  <a
+         data-fancybox="gallery"
+         data-src="https://i.328888.xyz/2023/03/18/MOHcX.png">
+        <img src="https://i.328888.xyz/2023/03/18/MOHcX.png"/>
+    </a>
+</div>
+<hr>
+<h2 id="default-html">Default HTML</h2>
+<h3 id="entry-point-----baseofhtml">Entry Point &mdash; baseof.html</h3>
+<p>In layouts/_default folder, <strong>baseof.html</strong> is the main entrance, so we import the common HTML in the baseof.html, such as header, footer and main body.</p>
+<div class="polaroid">
+  <a
+         data-fancybox="gallery"
+         data-src="https://i.328888.xyz/2023/03/18/MO88c.png">
+        <img src="https://i.328888.xyz/2023/03/18/MO88c.png"/>
+    </a>
+  <div class="container">
+    <p> baseof.html</p>
+  </div>
+</div>
+<p>This part is the dynamic content we reuse in each html, in other words, when user click different HTML page, it&rsquo;ll show different content, but the header(navigation menu) and footer are the same.
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>  {{<span style="color:#f92672">-</span> <span style="color:#a6e22e">block</span> <span style="color:#e6db74">&#34;main&#34;</span> .}}<span style="color:#a6e22e">xxxxxx</span>{{<span style="color:#f92672">-</span> <span style="color:#a6e22e">end</span>}}</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<div class="polaroid">
+  <a
+        data-fancybox="gallery"
+        data-src="https://i.328888.xyz/2023/03/18/MOq4t.png">
+      <img src="https://i.328888.xyz/2023/03/18/MOq4t.png"/>
+  </a>
+  <div class="container">
+    <p> display different content </p>
+  </div>
+</div>
+<h3 id="homepage-----indexhtml">homepage &mdash; index.html</h3>
+<div class="polaroid" style="width:50%" >
+ <a
+        data-fancybox="gallery"
+        data-src="https://i.328888.xyz/2023/03/18/MbL5w.png">
+      <img src="https://i.328888.xyz/2023/03/18/MbL5w.png"/>
+  </a>
+  <div class="container">
+    <p> index.html</p>
+  </div>
+</div>
+<div class="polaroid" style="width:50%" >
+<a
+        data-fancybox="gallery"
+        data-src="https://i.328888.xyz/2023/03/18/Mjl3X.png">
+      <img src="https://i.328888.xyz/2023/03/18/Mjl3X.png"/>
+  </a>
+  <div class="container">
+    <p> _index.md</p>
+  </div>
+</div>
+<div class="polaroid">
+<a
+        data-fancybox="gallery"
+        data-src="https://i.328888.xyz/2023/03/18/Mj5V5.png">
+      <img src="https://i.328888.xyz/2023/03/18/Mj5V5.png"/>
+  </a>
+</div>
+<p>If we want to use the parameters we define in the md file, the syntax is
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{{.<span style="color:#a6e22e">Params</span>.<span style="color:#a6e22e">typed_names</span> }}</span></span></code></pre></td></tr></table>
+</div>
+</div>
+If we want to use the parameters we define in the config file(Global parameters), the syntax is
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span> {{ <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">Site</span>.<span style="color:#a6e22e">Params</span>.<span style="color:#a6e22e">homepage</span> }}</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<h3 id="articlepost-page-----singlehtml">Article/post page &mdash; single.html</h3>
+<p>In Hugo, the <strong>single.html</strong> file is a template file used to display individual content pages, such as a single blog post or a single page on your website.</p>
+<p>The single.html template can include Hugo variables and functions to display dynamic content, such as the title, date, author, and content of the page. You can also add custom CSS styles or JavaScript scripts to enhance the layout and functionality of your pages.</p>
+<p>Once you have created the single.html template in your theme&rsquo;s layouts directory, Hugo will automatically use it to display individual content pages on your website. If you want to customize the layout for specific types of content, you can create additional templates with different names, such as single-blog.html or single-page.html, and specify their usage in your Hugo configuration file.</p>
+<div class="polaroid">
+<a
+        data-fancybox="gallery"
+        data-src="https://i.328888.xyz/2023/03/18/M8Ufz.png">
+      <img src="https://i.328888.xyz/2023/03/18/M8Ufz.png"/>
+  </a>
+  <div class="container">
+    <p> single.html </p>
+  </div>
+</div>
+<hr>
+
+            </div>
+            <aside style=" width: 20%;position: fixed; right: 5%; ">
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#hugo-introduction">Hugo Introduction</a>
+      <ul>
+        <li><a href="#basic-description">Basic Description</a></li>
+        <li><a href="#hugo-theme">Hugo Theme</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-hugo-run-the-application">How hugo run the application?</a>
+      <ul>
+        <li><a href="#preparation">Preparation</a></li>
+      </ul>
+    </li>
+    <li><a href="#configtoml-file">Config.toml file</a>
+      <ul>
+        <li><a href="#introduce-theme">Introduce theme</a></li>
+        <li><a href="#setup-menu">Setup menu</a></li>
+      </ul>
+    </li>
+    <li><a href="#common-js-and-css">Common js and css</a></li>
+    <li><a href="#default-html">Default HTML</a>
+      <ul>
+        <li><a href="#entry-point-----baseofhtml">Entry Point &mdash; baseof.html</a></li>
+        <li><a href="#homepage-----indexhtml">homepage &mdash; index.html</a></li>
+        <li><a href="#articlepost-page-----singlehtml">Article/post page &mdash; single.html</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </aside>
+          </div>
+          <div class="pagination"><div class="paginator" >
+    
+        <a class="prev btn" href="https://amber916young.github.io/posts/create-a-custom-page/"><i class="fa-solid fa-arrow-left"></i>Create a custom page </a>
+    
+    
+</div></div>
+          <div class="comment-block">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    (function() {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+    
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = '';
+        dsq.src = '//https-amber916young-github-io.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></div>
+        </div>
+      </div>
+      </div>
+  </section>
+                </main><footer class="bg-portfolio-bg-darker-gray">
+    <div class="container flex flex-col sm:flex-row justify-between gap-y-10 sm:gap-4 py-14">
+    <div class="flex-1">
+      
+      <h4 class="font-bold mb-4 text-lg">Copyright© All rights reserved</h4>
+      <p class="text-sm mb-2"> 
+        <span id="js-year"></span> - tothemoon
+      </p>
+      <p class="text-sm mb-4">Design by yejiaYang. </p>
+      
+        <div class="text-sm">
+          <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+            <i class="fa-solid fa-chart-simple"></i>
+            TotalView&nbsp;
+            <span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+          </span>|
+          <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+            <i class="fa-solid fa-eye"></i>
+            Visitor&nbsp;
+            <span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+          </span>
+      </div>
+    </div>
+
+
+
+    
+    <div class="flex-1">
+      <h4 class="font-bold mb-4 text-lg">Quick links</h4>
+      <ul class="list-none text-sm">
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/"  title="Home">
+    <li class="hover  ">
+      <i class="fa-solid fa-house"></i>
+      Home
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/posts/"  title="My Blog">
+    <li class="hover    active ">
+      <i class="fa-solid fa-paper-plane"></i>
+      My Blog
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/"  title="Tags">
+    <li class="hover  ">
+      <i class="fa-solid fa-tag"></i>
+      Tags
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/about/"  title="Abouts">
+    <li class="hover  ">
+      <i class="fa-sharp fa-solid fa-medal"></i>
+      Abouts
+    </li>
+</a>
+</ul>
+    </div>
+    
+    <div class="flex-1">        
+      <h4 class="font-bold mb-4 text-lg">Contact me</h4>
+      <a href="mailto:frygucki@gmail.com?subject=Hello" class="text-sm hover">youngyejia@163.com</a>
+      <div class="flex gap-4 mt-4">
+  
+    <a href="https://leetcode.com/BirdyYang/"  target="_blank">
+      <i class="fa-solid fa-bug  fa-lg"></i>
+    </a>
+  
+    <a href="https://github.com/Amber916Young"  target="_blank">
+      <i class="fa-brands fa-github  fa-lg"></i>
+    </a>
+  
+    <a href="https://www.linkedin.com/in/yejia-yang-11105722a/"  target="_blank">
+      <i class="fa-brands fa-linkedin fa-lg"></i>
+    </a>
+  
+    <a href="https://www.instagram.com/tothemoonbird/"  target="_blank">
+      <i class="fa-brands fa-instagram fa-lg"></i>
+    </a>
+  
+</div>
+    </div>
+  </div>
+</footer>
+<button class="scrollToTopBtn showBtn">
+    <i class="fa-solid fa-plane-up"></i>
+</button>
+        </div><script src="/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/particles.min.js"></script>
+<script src="/js/typed/typed.min.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<script src="/js/main.js?v=2"></script></body>
+</html>

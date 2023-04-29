@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on tothemoon&#39;s blog</title>
+    <link>https://amber916young.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on tothemoon&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sun, 19 Mar 2023 15:03:08 +0000</lastBuildDate><atom:link href="https://amber916young.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add Icon/Active class In Menu</title>
+      <link>https://amber916young.github.io/posts/add-icon-menu/</link>
+      <pubDate>Sun, 19 Mar 2023 15:03:08 +0000</pubDate>
+      
+      <guid>https://amber916young.github.io/posts/add-icon-menu/</guid>
+      <description>How to custom Icon in menu In the [Hugo introduction] blog, I have shown how the menu is added in hugo. Following the previous article on how to customize social media, did you think that to display the menu you would need to add an icon property? 😂😂😂 Head to config.toml file, 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 # setup menu sectionPagesMenu = &amp;#34;main&amp;#34; [menu] [[menu.</description>
+    </item>
+    
+    <item>
+      <title>Add Social Media in hugo</title>
+      <link>https://amber916young.github.io/posts/add-social-media/</link>
+      <pubDate>Sat, 18 Mar 2023 23:29:22 +0000</pubDate>
+      
+      <guid>https://amber916young.github.io/posts/add-social-media/</guid>
+      <description>Add your social media in config.toml You can add social media in HTML directly, also, can use config file which is easy to change every time you want to update.
+1 2 3 4 5 6 7 8 9 10 11 12 13 [params] [[params.social]] url = &amp;#34;https://twitter.com/&amp;#34; icon = &amp;#34;fa-brands fa-twitter fa-lg&amp;#34; [[params.social]] url = &amp;#34;https://facebook.com/&amp;#34; icon = &amp;#34;fa-brands fa-facebook fa-lg&amp;#34; [[params.social]] url = &amp;#34;https://linkedin.com/&amp;#34; icon = &amp;#34;fa-brands fa-linkedin fa-lg&amp;#34; [[params.</description>
+    </item>
+    
+    <item>
+      <title>Create a custom page</title>
+      <link>https://amber916young.github.io/posts/create-a-custom-page/</link>
+      <pubDate>Wed, 08 Mar 2023 23:14:26 +0000</pubDate>
+      
+      <guid>https://amber916young.github.io/posts/create-a-custom-page/</guid>
+      <description>Create a custom page: about me About page is not the default page, easily we can consider about.html is a other type of posts, so we need to create a post: the command-line interface (CLI) is: 1 hugo new posts/&amp;lt;post-name&amp;gt;.md in this case, we need to type: 1 2 3 hugo new about/_index.md # create a new folder named about, we separate posts folder(default blog folder) and custom folder you might ask why is md file not HTML?</description>
+    </item>
+    
+  </channel>
+</rss>

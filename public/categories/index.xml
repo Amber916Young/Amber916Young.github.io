@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on tothemoon&#39;s blog</title>
+    <link>https://amber916young.github.io/categories/</link>
+    <description>Recent content in Categories on tothemoon&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sat, 29 Apr 2023 14:58:07 +0100</lastBuildDate><atom:link href="https://amber916young.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Travle</title>
+      <link>https://amber916young.github.io/categories/travle/</link>
+      <pubDate>Sat, 29 Apr 2023 14:58:07 +0100</pubDate>
+      
+      <guid>https://amber916young.github.io/categories/travle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reading</title>
+      <link>https://amber916young.github.io/categories/reading/</link>
+      <pubDate>Sun, 16 Apr 2023 18:29:55 +0100</pubDate>
+      
+      <guid>https://amber916young.github.io/categories/reading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://amber916young.github.io/categories/hugo/</link>
+      <pubDate>Mon, 20 Mar 2023 11:12:16 +0000</pubDate>
+      
+      <guid>https://amber916young.github.io/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://amber916young.github.io/categories/tutorial/</link>
+      <pubDate>Mon, 20 Mar 2023 11:12:16 +0000</pubDate>
+      
+      <guid>https://amber916young.github.io/categories/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://amber916young.github.io/categories/github/</link>
+      <pubDate>Sun, 19 Mar 2023 20:19:30 +0000</pubDate>
+      
+      <guid>https://amber916young.github.io/categories/github/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

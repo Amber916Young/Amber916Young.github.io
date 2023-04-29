@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on tothemoon&#39;s blog</title>
+    <link>https://amber916young.github.io/tags/github/</link>
+    <description>Recent content in github on tothemoon&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sun, 19 Mar 2023 20:19:30 +0000</lastBuildDate><atom:link href="https://amber916young.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Deploy to Github</title>
+      <link>https://amber916young.github.io/posts/how-to-deploy-to-github/</link>
+      <pubDate>Sun, 19 Mar 2023 20:19:30 +0000</pubDate>
+      
+      <guid>https://amber916young.github.io/posts/how-to-deploy-to-github/</guid>
+      <description>How to Deploy to Github To deploy your Hugo site to GitHub Pages, you can follow these steps:
+First update baseURL in config.yaml baseURL: https://www.username.github.io Then compile with hugo 1 hugo Go to public folder 1 cd piblic Second, create a new repository on GitHub that will hold your website files. Make sure to name the repository in the format yourusername.github.io, where yourusername is your GitHub username. Don&amp;rsquo;t forget add github.</description>
+    </item>
+    
+  </channel>
+</rss>

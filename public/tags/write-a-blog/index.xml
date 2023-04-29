@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>write a blog on tothemoon&#39;s blog</title>
+    <link>https://amber916young.github.io/tags/write-a-blog/</link>
+    <description>Recent content in write a blog on tothemoon&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sun, 19 Mar 2023 17:22:49 +0000</lastBuildDate><atom:link href="https://amber916young.github.io/tags/write-a-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Write a Blog in Hugo</title>
+      <link>https://amber916young.github.io/posts/how-to-write-a-blog/</link>
+      <pubDate>Sun, 19 Mar 2023 17:22:49 +0000</pubDate>
+      
+      <guid>https://amber916young.github.io/posts/how-to-write-a-blog/</guid>
+      <description>How to Write a Blog in Hugo In hugo, the blogs/articles/posts all store in the content/posts/ folder.
+Path of Posts folder 1 2 3 4 hugo new posts/xxxmd # such as I create this post hugo new posts/How-to-write-a-blog.md # don&amp;#39;t use space in filename!!! &amp;ldquo;posts&amp;rdquo; means, create a md file under the posts folder(is also default blog folder)
+Structure of Post page Structure of Post/blog page This page is like a jigsaw puzzle with several chapters combined, this is done so that the code can call on different structures on other pages, reducing code repetition.</description>
+    </item>
+    
+  </channel>
+</rss>
