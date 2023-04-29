@@ -6,7 +6,7 @@
         <div class="meta-info">
             <div class="article-meta-info">
                 <span class="article-date article-meta-item">
-                    <span class="pc">{{ .Page.Params.Date | time.Format ":date_long"}}</span>
+                    <span class="pc"> {{ .Page.Params.Date.Format "January 2, 2006" }}</span>
                 </span>
             <span class="article-date article-meta-item">
                 Post by&nbsp;
