@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aboutme on tothemoon&#39;s blog</title>
+    <link>https://amber916young.github.io/tags/aboutme/</link>
+    <description>Recent content in aboutme on tothemoon&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Wed, 08 Mar 2023 23:14:26 +0000</lastBuildDate><atom:link href="https://amber916young.github.io/tags/aboutme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a custom page</title>
+      <link>https://amber916young.github.io/posts/create-a-custom-page/</link>
+      <pubDate>Wed, 08 Mar 2023 23:14:26 +0000</pubDate>
+      
+      <guid>https://amber916young.github.io/posts/create-a-custom-page/</guid>
+      <description>Create a custom page: about me About page is not the default page, easily we can consider about.html is a other type of posts, so we need to create a post: the command-line interface (CLI) is: 1 hugo new posts/&amp;lt;post-name&amp;gt;.md in this case, we need to type: 1 2 3 hugo new about/_index.md # create a new folder named about, we separate posts folder(default blog folder) and custom folder you might ask why is md file not HTML?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>installation on tothemoon&#39;s blog</title>
+    <link>https://amber916young.github.io/tags/installation/</link>
+    <description>Recent content in installation on tothemoon&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Mon, 20 Mar 2023 11:12:16 +0000</lastBuildDate><atom:link href="https://amber916young.github.io/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Use This Theme in Your Project</title>
+      <link>https://amber916young.github.io/posts/how-to-use-this-theme-in-your-project/</link>
+      <pubDate>Mon, 20 Mar 2023 11:12:16 +0000</pubDate>
+      
+      <guid>https://amber916young.github.io/posts/how-to-use-this-theme-in-your-project/</guid>
+      <description>Downlaod vscode Navigate to VsCode website, just download in your pc.
+Install Hugo environment In hugo offical website, there are four options to install hugo env which depends on your operation system(OS).
+Install Git Install Go version 1.18 or later Update your PATH environment variable as described in the Go documentation Hugo CLI Create a new site 1 2 3 4 hugo new site mywebsiteName # naviagate to the new folder, open in VScode cd mywebsiteName Download theme and import to themes folder You can clone theme project or download zip directly.</description>
+    </item>
+    
+  </channel>
+</rss>

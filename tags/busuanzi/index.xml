@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>busuanzi on tothemoon&#39;s blog</title>
+    <link>https://amber916young.github.io/tags/busuanzi/</link>
+    <description>Recent content in busuanzi on tothemoon&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sun, 19 Mar 2023 18:09:16 +0000</lastBuildDate><atom:link href="https://amber916young.github.io/tags/busuanzi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Calculate the Number of Views</title>
+      <link>https://amber916young.github.io/posts/how-to-calculate-the-number-of-views/</link>
+      <pubDate>Sun, 19 Mar 2023 18:09:16 +0000</pubDate>
+      
+      <guid>https://amber916young.github.io/posts/how-to-calculate-the-number-of-views/</guid>
+      <description>How to Calculate the Number of Views Busuanzi is a third-party visitor counter and statistics tool that you can use with Hugo to track visitor traffic to your site. Here&amp;rsquo;s how to set up Busuanzi in Hugo:
+First, go to the Busuanzi website (https://busuanzi.ibruce.info/) and choose the style of the visitor counter you want to use. You can choose from several different styles and customize the text that appears alongside the counter.</description>
+    </item>
+    
+  </channel>
+</rss>
