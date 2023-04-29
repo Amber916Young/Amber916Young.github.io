@@ -11,4 +11,4 @@ layout: "index"
 
 # Hello, I'm tothemoon
 ## I'm a backend developer
-This is index
+I like learning something new.

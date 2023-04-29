@@ -9,11 +9,11 @@ featured: true
 type: posts
 label: "orginal"
 author: {{ .Site.Params.author}}
-tags: ["tag1", "tag2"]
-categories: ["cate1","cate2"]
+tags: ["tag1"]
+categories: ["cate1"]
 cover:
     position: <left,right>
-    image: ""
+    image: "null"
     alt: "<alt text>"
     caption: "<text>"
 ---

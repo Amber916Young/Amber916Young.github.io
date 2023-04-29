@@ -1386,8 +1386,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 768px){
   .md\:object-cover{
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: fill;
+       object-fit: fill;
   }
 
   .md\:px-4{
