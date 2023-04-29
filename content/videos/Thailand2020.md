@@ -8,8 +8,8 @@ type: posts
 layout: videos
 label: "travle"
 author: tothemoon
-tags: ["tag1"]
-categories: ["cate1"]
+tags: ["Travle","Tailand"]
+categories: ["Travle"]
 cover:
     position: <left,right>
     image: "null"
