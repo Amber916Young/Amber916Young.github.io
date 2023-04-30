@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Design by yejiaYang. " />
+    <meta name="author" content="tothemoon">
+    <meta name="keywords" content="blog,life,code,desgin,yejiaYang,woman stem">
+
+    <title>Customize search bar in Flutter | tothemoon&#39;s blog</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="icon"  type="image/x-icon"  href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/tailwind.css?v=1" /> 
+    <link rel="stylesheet" href="/css/main.css?v=1" /> 
+    <link rel="stylesheet" href="/css/404.css" /> 
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://kit.fontawesome.com/237a634d14.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+</head><body class=" bg-portfolio-bg-lighter-gray text-portfolio-text-light-gray">
+
+        <div id="popup"></div>
+        <div id="normal">
+            <header  >
+    <nav  id="top-nav"   class=" fixed z-10 w-full py-4 sm:py-6 text-portfolio-text-light-gray bg-portfolio-bg-lighter-gray">
+      <div   id="menu" class="container flex flex-wrap items-center">
+        
+        <div class="flex gap-4">
+  
+    <a href="https://leetcode.com/BirdyYang/"  target="_blank">
+      <i class="fa-solid fa-bug  fa-lg"></i>
+    </a>
+  
+    <a href="https://github.com/Amber916Young"  target="_blank">
+      <i class="fa-brands fa-github  fa-lg"></i>
+    </a>
+  
+    <a href="https://www.linkedin.com/in/yejia-yang-11105722a/"  target="_blank">
+      <i class="fa-brands fa-linkedin fa-lg"></i>
+    </a>
+  
+    <a href="https://www.instagram.com/tothemoonbird/"  target="_blank">
+      <i class="fa-brands fa-instagram fa-lg"></i>
+    </a>
+  
+</div>
+        
+        <ul class=" hidden sm:flex flex-1 justify-end items-center gap-6 lowercase">
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/"  title="Home">
+    <li class="hover  ">
+      <i class="fa-solid fa-house"></i>
+      Home
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/posts/"  title="My Blog">
+    <li class="hover    active ">
+      <i class="fa-solid fa-paper-plane"></i>
+      My Blog
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/"  title="Tags">
+    <li class="hover  ">
+      <i class="fa-solid fa-tag"></i>
+      Tags
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/about/"  title="Abouts">
+    <li class="hover  ">
+      <i class="fa-sharp fa-solid fa-medal"></i>
+      Abouts
+    </li>
+</a>
+</ul>
+        
+        <div class="flex sm:hidden flex-1 justify-end">
+          <button id="toggle" class="button_container">
+            <i class="fa-solid fa-bars"></i>           
+          </button>
+        </div>
+      </div>
+      <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/"  title="Home">
+    <li class="hover  ">
+      <i class="fa-solid fa-house"></i>
+      Home
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/posts/"  title="My Blog">
+    <li class="hover    active ">
+      <i class="fa-solid fa-paper-plane"></i>
+      My Blog
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/"  title="Tags">
+    <li class="hover  ">
+      <i class="fa-solid fa-tag"></i>
+      Tags
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/about/"  title="Abouts">
+    <li class="hover  ">
+      <i class="fa-sharp fa-solid fa-medal"></i>
+      Abouts
+    </li>
+</a>
+</ul>
+        </nav>
+      </div>
+    </nav>
+  </header><main class="min-h-full">
+<section class="s:mt-10">
+    <div class="container sm:my-14">
+      <div class="flex flex-col sm:flex-row ">  
+        <div class="w-full sm:w-10 sm:mt-10">
+          <div class="page-metadata">
+<div class="article-header">
+    <div class="avatar">
+        <img src="https://i.328888.xyz/2023/03/19/Pf8MH.png">
+    </div>
+    <div class="info">
+        <div class="author">
+            <span class="name">tothemoon</span>
+            <span class="author-label"></span>
+        </div>
+        <div class="meta-info">
+            <div class="article-meta-info">
+                <span class="article-date article-meta-item">
+                    <i class="fa fa-pen"></i>&nbsp;
+                    <span class="pc">April 30, 2023</span>
+                </span>
+                
+                <div class="article-categories article-meta-item">
+                    <span class="fa fa-folder-open"></span>
+                    
+                    <a href="https://amber916young.github.io/categories/flutter/">flutter</a>&nbsp;
+                    
+                    <a href="https://amber916young.github.io/categories/riverpod/">riverpod</a>&nbsp;
+                    
+                </div>
+                
+                
+                <span class="article-tags article-meta-item">
+                    <i class="fa fa-tag"></i>&nbsp;
+                    <ul>
+                        
+                        <li>
+                        #<a href="https://amber916young.github.io/tags/riverpod/">riverpod</a>&nbsp;
+                        </li>
+                        
+                        <li>
+                        #<a href="https://amber916young.github.io/tags/state-management/">state-management</a>&nbsp;
+                        </li>
+                        
+                    </ul>
+                </span>
+                
+                <span class="article-wordcount article-meta-item">
+                    <i class="fa fa-book"></i>&nbsp;<span>960 Words</span>
+                </span>
+                <span class="article-min2read article-meta-item">
+                    <i class="fa fa-clock"></i>&nbsp;<span>5 mins</span>
+                </span>
+                <span class="article-pv article-meta-item">
+                    <i class="fa-regular fa-eye"></i>&nbsp;
+                    <span id="busuanzi_value_page_pv">
+                    </span>
+                </span>
+
+            </div>
+        </div>
+    </div>
+</div></div>
+          <div style="display: flex; " class="sm:mt-10">
+            <div class="page-content">
+              <h2 id="whats-effect-we-can-to-realise">What&rsquo;s effect we can to realise?</h2>
+<div class="polaroid" style="width:70%" >
+   <a data-fancybox="gallery" data-src="https://i.328888.xyz/2023/04/30/iLiJxq.png">
+        <img src="https://i.328888.xyz/2023/04/30/iLiJxq.png"/>
+    </a>
+  <div class="container">
+    <p> Custom search bar </p>
+  </div>
+</div>
+The search bar can be used in any listview page,when user texts something in different page should list the correct outcome. 
+<br>
+<h2 id="customise-text-input">Customise text input</h2>
+<br>
+<h3 id="-encapsulate-textformfield">✨ Encapsulate TextFormField</h3>
+<br>
+<p><a href="https://api.flutter.dev/flutter/material/TextFormField-class.html">TextFormField</a>
+widget is used to take input from the user in flutter. This is a simple and easy user input widget in flutter.</p>
+<p>We can perform any operation on that user input data using TextFormField. You can use that user input, can send and show that input. You can store it into a TextEditingController type object.</p>
+<p>In TextFormField, controller is important to monitor the text user input.  focusNode is to monitor user wheater click the text bar.</p>
+<p>In this search bar, when the text is empty, the suffix icon is &ldquo;search&rdquo;, whereas should be &ldquo;close&rdquo; icon.</p>
+<br>
+<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CustomInputSearch</span> <span style="color:#66d9ef">extends</span> ConsumerWidget <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">final</span> TextEditingController controller <span style="color:#f92672">=</span> TextEditingController<span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">final</span> FocusNode<span style="color:#f92672">?</span> focusNode<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  CustomInputSearch<span style="color:#f92672">({</span>key<span style="color:#f92672">,</span>  <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">focusNode</span> <span style="color:#f92672">});</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">@override</span>
+</span></span><span style="display:flex;"><span>  Widget <span style="color:#a6e22e">build</span><span style="color:#f92672">(</span>BuildContext context<span style="color:#f92672">,</span> WidgetRef ref<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">final</span> size <span style="color:#f92672">=</span> Applayout<span style="color:#f92672">.</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">(</span>context<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">final</span> searchNotifier <span style="color:#f92672">=</span> ref<span style="color:#f92672">.</span><span style="color:#a6e22e">watch</span><span style="color:#f92672">(</span>searchProvider<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>    print<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;CustomInputSearch ${controller.text}&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Container<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>      height<span style="color:#f92672">:</span> Applayout<span style="color:#f92672">.</span><span style="color:#a6e22e">getHeight</span><span style="color:#f92672">(</span><span style="color:#ae81ff">50</span><span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>      width<span style="color:#f92672">:</span> Applayout<span style="color:#f92672">.</span><span style="color:#a6e22e">getHeight</span><span style="color:#f92672">(</span>size<span style="color:#f92672">.</span><span style="color:#a6e22e">width</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">.8</span><span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>      margin<span style="color:#f92672">:</span> EdgeInsets<span style="color:#f92672">.</span><span style="color:#a6e22e">symmetric</span><span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>        horizontal<span style="color:#f92672">:</span> size<span style="color:#f92672">.</span><span style="color:#a6e22e">width</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.1</span><span style="color:#f92672">,</span> vertical<span style="color:#f92672">:</span> Applayout<span style="color:#f92672">.</span><span style="color:#a6e22e">getHeight</span><span style="color:#f92672">(</span><span style="color:#ae81ff">10</span><span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>      decoration<span style="color:#f92672">:</span> BoxDecoration<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>        borderRadius<span style="color:#f92672">:</span> BorderRadius<span style="color:#f92672">.</span><span style="color:#a6e22e">circular</span><span style="color:#f92672">(</span>Applayout<span style="color:#f92672">.</span><span style="color:#a6e22e">getHeight</span><span style="color:#f92672">(</span><span style="color:#ae81ff">10</span><span style="color:#f92672">)),</span>
+</span></span><span style="display:flex;"><span>        color<span style="color:#f92672">:</span> Styles<span style="color:#f92672">.</span><span style="color:#a6e22e">bgColor2</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>      child<span style="color:#f92672">:</span> TextFormField<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>        focusNode<span style="color:#f92672">:</span>  focusNode<span style="color:#f92672">??</span> FocusNode<span style="color:#f92672">(),</span>
+</span></span><span style="display:flex;"><span>        onChanged<span style="color:#f92672">:</span> <span style="color:#f92672">(</span>value<span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>          searchNotifier<span style="color:#f92672">.</span><span style="color:#a6e22e">setSearchValue</span><span style="color:#f92672">(</span>value<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">},</span>
+</span></span><span style="display:flex;"><span>        controller<span style="color:#f92672">:</span> controller<span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>        autofocus<span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>        decoration<span style="color:#f92672">:</span> InputDecoration<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>          contentPadding<span style="color:#f92672">:</span> EdgeInsets<span style="color:#f92672">.</span><span style="color:#a6e22e">symmetric</span><span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>            horizontal<span style="color:#f92672">:</span> Applayout<span style="color:#f92672">.</span><span style="color:#a6e22e">getWidth</span><span style="color:#f92672">(</span><span style="color:#ae81ff">20</span><span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>            vertical<span style="color:#f92672">:</span> Applayout<span style="color:#f92672">.</span><span style="color:#a6e22e">getHeight</span><span style="color:#f92672">(</span><span style="color:#ae81ff">14</span><span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>          alignLabelWithHint<span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>          floatingLabelAlignment<span style="color:#f92672">:</span> FloatingLabelAlignment<span style="color:#f92672">.</span><span style="color:#a6e22e">start</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>          suffixIcon<span style="color:#f92672">:</span> controller<span style="color:#f92672">.</span><span style="color:#a6e22e">text</span><span style="color:#f92672">.</span><span style="color:#a6e22e">trim</span><span style="color:#f92672">().</span><span style="color:#a6e22e">isNotEmpty</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">?</span> IconButton<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>            icon<span style="color:#f92672">:</span> Icon<span style="color:#f92672">(</span>Icons<span style="color:#f92672">.</span><span style="color:#a6e22e">clear_rounded</span><span style="color:#f92672">,</span> color<span style="color:#f92672">:</span> Styles<span style="color:#f92672">.</span><span style="color:#a6e22e">orangeColor</span><span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>            onPressed<span style="color:#f92672">:</span> <span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>              controller<span style="color:#f92672">.</span><span style="color:#a6e22e">clear</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>              FocusManager<span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span><span style="color:#f92672">.</span><span style="color:#a6e22e">primaryFocus</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">unfocus</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>              searchNotifier<span style="color:#f92672">.</span><span style="color:#a6e22e">clearSearch</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">},)</span> <span style="color:#f92672">:</span> IconButton<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>            icon<span style="color:#f92672">:</span> Icon<span style="color:#f92672">(</span>Icons<span style="color:#f92672">.</span><span style="color:#a6e22e">search</span><span style="color:#f92672">,</span> color<span style="color:#f92672">:</span> Styles<span style="color:#f92672">.</span><span style="color:#a6e22e">whiteColor</span><span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>            onPressed<span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">,),</span>
+</span></span><span style="display:flex;"><span>          border<span style="color:#f92672">:</span> InputBorder<span style="color:#f92672">.</span><span style="color:#a6e22e">none</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>          hintText<span style="color:#f92672">:</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>Search <span style="color:#f92672">...</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>          hintStyle<span style="color:#f92672">:</span> Styles<span style="color:#f92672">.</span><span style="color:#a6e22e">textStyle</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<br></p>
+<h3 id="-use-it-in-anywhere">📍 Use it in anywhere</h3>
+<br>
+<p>It&rsquo;s very simple to use it. beacuse we use riverpod to monitor the textinput, we don&rsquo;t need to pass textcontroller to watch value changes.
+<br></p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  <span style="color:#66d9ef">final</span> FocusNode _searchFocusNode <span style="color:#f92672">=</span> FocusNode<span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">.....</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// general use
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span> CustomInputSearch<span style="color:#f92672">(</span> focusNode<span style="color:#f92672">:</span> _searchFocusNode<span style="color:#f92672">,</span> <span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// using in riverpod.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>ProviderScope<span style="color:#f92672">(</span>child<span style="color:#f92672">:</span> CustomInputSearch<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>    focusNode<span style="color:#f92672">:</span> _searchFocusNode<span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">),),</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<br>
+<h2 id="-monitor-text-changes-and-filter-the-target-data-by-using-riverpod">👉 Monitor text changes and filter the target data by using Riverpod</h2>
+<br>
+Riverpod is a state management library for Flutter developed by the same team behind the Provider library. Riverpod is designed to provide an improved API for managing state in Flutter apps, with a focus on performance, simplicity, and flexibility.
+<br>
+<p>Riverpod uses a concept called &ldquo;Scoped Providers&rdquo; to manage state within an app. A Scoped Provider is a function that takes a context and returns an object. The Scoped Provider is responsible for creating and managing the state for that object within the scope of the widget tree.</p>
+<br>
+<h3 id="import-riverpod-plugin">Import riverpod plugin</h3>
+<br>
+<p>Here is <a href="https://riverpod.dev/docs/getting_started">riverpod</a> offical website.</p>
+<br>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>environment:
+</span></span><span style="display:flex;"><span>  sdk: <span style="color:#e6db74">&#34;&gt;=2.17.0 &lt;3.0.0&#34;</span>
+</span></span><span style="display:flex;"><span>  flutter: <span style="color:#e6db74">&#34;&gt;=3.0.0&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>dependencies:
+</span></span><span style="display:flex;"><span>  flutter:
+</span></span><span style="display:flex;"><span>    sdk: flutter
+</span></span><span style="display:flex;"><span>  flutter_riverpod: ^2.3.6</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<br>
+<h2 id="watchprovider--readprovider">watch(provider) &amp; read(provider)</h2>
+<p>In Riverpod, watch and read are two ways to access the state of a provider. Here&rsquo;s what they do:</p>
+<br>
+<h3 id="watchprovider">watch(provider)</h3>
+<br>
+Returns a value that will rebuild the widget tree whenever the state of the provider changes.
+Should be used inside a widget's build method to subscribe to changes in state.
+Returns a T object that can be accessed using the .state property. For example: watch(counterProvider).state
+Here's an example of how to use watch to subscribe to changes in a counter:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyCounterWidget</span> <span style="color:#66d9ef">extends</span> StatelessWidget <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">@override</span>
+</span></span><span style="display:flex;"><span>  Widget <span style="color:#a6e22e">build</span><span style="color:#f92672">(</span>BuildContext context<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">final</span> counter <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span><span style="color:#a6e22e">watch</span><span style="color:#f92672">(</span>counterProvider<span style="color:#f92672">).</span><span style="color:#a6e22e">state</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Text<span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">&#39;</span>Counter<span style="color:#f92672">:</span> $counter<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<br>
+<h3 id="readprovider">read(provider):</h3>
+<br>
+<p>Returns the current value of the provider without subscribing to future changes.
+Should be used outside of a widget&rsquo;s build method, such as in a button press or event handler.
+Returns a T object that can be accessed using the .state property. For example: final counter = context.read(counterProvider).state
+Here&rsquo;s an example of how to use read to get the current value of a counter and update it:</p>
+<br>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyButtonWidget</span> <span style="color:#66d9ef">extends</span> StatelessWidget <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">@override</span>
+</span></span><span style="display:flex;"><span>  Widget <span style="color:#a6e22e">build</span><span style="color:#f92672">(</span>BuildContext context<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> RaisedButton<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>      child<span style="color:#f92672">:</span> Text<span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">&#39;</span>Increment Counter<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>      onPressed<span style="color:#f92672">:</span> <span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">final</span> counter <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span><span style="color:#a6e22e">read</span><span style="color:#f92672">(</span>counterProvider<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        counter<span style="color:#f92672">.</span><span style="color:#a6e22e">state</span><span style="color:#f92672">++;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>It&rsquo;s important to note that you should use watch inside a widget&rsquo;s build method and read outside of it. Using read inside a build method can lead to unnecessary widget rebuilds and performance issues. Additionally, it&rsquo;s generally recommended to use watch over read whenever possible, as watch provides a more reactive and efficient approach to managing state in Riverpod.</p>
+<br>
+<h2 id="create-a-searchnotifierdart-file">Create a SearchNotifier.dart file</h2>
+<br>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>package<span style="color:#f92672">:</span>flutter<span style="color:#f92672">/</span>cupertino<span style="color:#f92672">.</span><span style="color:#a6e22e">dart</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>package<span style="color:#f92672">:</span>flutter_riverpod<span style="color:#f92672">/</span>flutter_riverpod<span style="color:#f92672">.</span><span style="color:#a6e22e">dart</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SearchNotifier</span> <span style="color:#66d9ef">extends</span> ChangeNotifier <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  Ref ref<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>  String state <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  SearchNotifier<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ref</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    state <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setSearchValue</span><span style="color:#f92672">(</span>String value<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    state <span style="color:#f92672">=</span> value<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    notifyListeners<span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  String get searchValue <span style="color:#f92672">=&gt;</span> state<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  set <span style="color:#a6e22e">searchValue</span><span style="color:#f92672">(</span>String value<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    setSearchValue<span style="color:#f92672">(</span>value<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>    notifyListeners<span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">clearSearch</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    state <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    notifyListeners<span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">final</span> searchProvider <span style="color:#f92672">=</span> ChangeNotifierProvider<span style="color:#f92672">.</span><span style="color:#a6e22e">autoDispose</span><span style="color:#f92672">&lt;</span>SearchNotifier<span style="color:#f92672">&gt;((</span>ref<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> SearchNotifier<span style="color:#f92672">(</span>ref<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">});</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<br>
+<p>In search bar, &ldquo;watch&rdquo; means when the value changed, the lasted value can be catched.</p>
+<br>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> searchNotifier <span style="color:#f92672">=</span> ref<span style="color:#f92672">.</span><span style="color:#a6e22e">watch</span><span style="color:#f92672">(</span>searchProvider<span style="color:#f92672">);</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<br>
+<h2 id="filter-data-based-on-text-value">Filter data based on text value</h2>
+<br>
+<p>In the listview page, &ldquo;watch&rdquo; the value in the real time. &ldquo;cartListProvider&rdquo; is another part to access data using RESTful api. We can define a function call &ldquo;filterOrders&rdquo; to filter the data.</p>
+<br>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> value <span style="color:#f92672">=</span> ref<span style="color:#f92672">.</span><span style="color:#a6e22e">watch</span><span style="color:#f92672">(</span>searchProvider<span style="color:#f92672">).</span><span style="color:#a6e22e">state</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>filteredData <span style="color:#f92672">=</span>  ref<span style="color:#f92672">.</span><span style="color:#a6e22e">read</span><span style="color:#f92672">(</span>cartListProvider<span style="color:#f92672">(</span>supplierId<span style="color:#f92672">)).</span><span style="color:#a6e22e">filterOrders</span><span style="color:#f92672">(</span>value<span style="color:#f92672">);</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<br>
+In cartListProvider.dart.
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span> List<span style="color:#f92672">&lt;</span>SupplierProductModel<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">filterOrders</span><span style="color:#f92672">(</span>String _searchString<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    String lowerValue <span style="color:#f92672">=</span> _searchString<span style="color:#f92672">.</span><span style="color:#a6e22e">toLowerCase</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">final</span> filteredData <span style="color:#f92672">=</span> list<span style="color:#f92672">.</span><span style="color:#a6e22e">where</span><span style="color:#f92672">((</span>item<span style="color:#f92672">)</span> <span style="color:#f92672">=&gt;</span>
+</span></span><span style="display:flex;"><span>        item<span style="color:#f92672">.</span><span style="color:#a6e22e">productName</span><span style="color:#f92672">!.</span><span style="color:#a6e22e">toLowerCase</span><span style="color:#f92672">().</span><span style="color:#a6e22e">contains</span><span style="color:#f92672">(</span>lowerValue<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">).</span><span style="color:#a6e22e">toList</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> filteredData<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<br>
+<p>Thanks.</p>
+<br>
+<br>
+
+            </div>
+            <aside style=" width: 20%;position: fixed; right: 5%; ">
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#whats-effect-we-can-to-realise">What&rsquo;s effect we can to realise?</a></li>
+    <li><a href="#customise-text-input">Customise text input</a>
+      <ul>
+        <li><a href="#-encapsulate-textformfield">✨ Encapsulate TextFormField</a></li>
+        <li><a href="#-use-it-in-anywhere">📍 Use it in anywhere</a></li>
+      </ul>
+    </li>
+    <li><a href="#-monitor-text-changes-and-filter-the-target-data-by-using-riverpod">👉 Monitor text changes and filter the target data by using Riverpod</a>
+      <ul>
+        <li><a href="#import-riverpod-plugin">Import riverpod plugin</a></li>
+      </ul>
+    </li>
+    <li><a href="#watchprovider--readprovider">watch(provider) &amp; read(provider)</a>
+      <ul>
+        <li><a href="#watchprovider">watch(provider)</a></li>
+        <li><a href="#readprovider">read(provider):</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-a-searchnotifierdart-file">Create a SearchNotifier.dart file</a></li>
+    <li><a href="#filter-data-based-on-text-value">Filter data based on text value</a></li>
+  </ul>
+</nav>
+            </aside>
+          </div>
+          <div class="pagination"><div class="paginator" >
+    
+    
+        <a class="next btn" href="https://amber916young.github.io/posts/%E9%80%8F%E6%98%8E%E3%81%AA%E8%9E%BA%E6%97%8B/">透明な螺旋 阅读感受 <i class="fa-solid fa-arrow-right"></i></a>
+       
+    
+</div></div>
+          <div class="comment-block">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    (function() {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+    
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = '';
+        dsq.src = '//https-amber916young-github-io.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></div>
+        </div>
+      </div>
+      </div>
+  </section>
+                </main><footer class="bg-portfolio-bg-darker-gray">
+    <div class="container flex flex-col sm:flex-row justify-between gap-y-10 sm:gap-4 py-14">
+    <div class="flex-1">
+      
+      <h4 class="font-bold mb-4 text-lg">Copyright© All rights reserved</h4>
+      <p class="text-sm mb-2"> 
+        <span id="js-year"></span> - tothemoon
+      </p>
+      <p class="text-sm mb-4">Design by yejiaYang. </p>
+      
+        <div class="text-sm">
+          <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+            <i class="fa-solid fa-chart-simple"></i>
+            TotalView&nbsp;
+            <span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+          </span>|
+          <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+            <i class="fa-solid fa-eye"></i>
+            Visitor&nbsp;
+            <span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+          </span>
+      </div>
+    </div>
+
+
+
+    
+    <div class="flex-1">
+      <h4 class="font-bold mb-4 text-lg">Quick links</h4>
+      <ul class="list-none text-sm">
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/"  title="Home">
+    <li class="hover  ">
+      <i class="fa-solid fa-house"></i>
+      Home
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/posts/"  title="My Blog">
+    <li class="hover    active ">
+      <i class="fa-solid fa-paper-plane"></i>
+      My Blog
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/"  title="Tags">
+    <li class="hover  ">
+      <i class="fa-solid fa-tag"></i>
+      Tags
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/about/"  title="Abouts">
+    <li class="hover  ">
+      <i class="fa-sharp fa-solid fa-medal"></i>
+      Abouts
+    </li>
+</a>
+</ul>
+    </div>
+    
+    <div class="flex-1">        
+      <h4 class="font-bold mb-4 text-lg">Contact me</h4>
+      <a href="mailto:frygucki@gmail.com?subject=Hello" class="text-sm hover">youngyejia@163.com</a>
+      <div class="flex gap-4 mt-4">
+  
+    <a href="https://leetcode.com/BirdyYang/"  target="_blank">
+      <i class="fa-solid fa-bug  fa-lg"></i>
+    </a>
+  
+    <a href="https://github.com/Amber916Young"  target="_blank">
+      <i class="fa-brands fa-github  fa-lg"></i>
+    </a>
+  
+    <a href="https://www.linkedin.com/in/yejia-yang-11105722a/"  target="_blank">
+      <i class="fa-brands fa-linkedin fa-lg"></i>
+    </a>
+  
+    <a href="https://www.instagram.com/tothemoonbird/"  target="_blank">
+      <i class="fa-brands fa-instagram fa-lg"></i>
+    </a>
+  
+</div>
+    </div>
+  </div>
+</footer>
+<button class="scrollToTopBtn showBtn">
+    <i class="fa-solid fa-plane-up"></i>
+</button>
+        </div><script src="/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/particles.min.js"></script>
+<script src="/js/typed/typed.min.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<script src="/js/main.js?v=2"></script></body>
+</html>
