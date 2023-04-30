@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sun, 16 Apr 2023 18:29:55 +0100</lastBuildDate><atom:link href="https://amber916young.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Apr 2023 13:47:34 +0100</lastBuildDate><atom:link href="https://amber916young.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Customize search bar in Flutter</title>
+      <link>https://amber916young.github.io/posts/customize-search-in-flutter/</link>
+      <pubDate>Sun, 30 Apr 2023 13:47:34 +0100</pubDate>
+      
+      <guid>https://amber916young.github.io/posts/customize-search-in-flutter/</guid>
+      <description>What&amp;rsquo;s effect we can to realise? Custom search bar The search bar can be used in any listview page,when user texts something in different page should list the correct outcome. Customise text input ✨ Encapsulate TextFormField TextFormField widget is used to take input from the user in flutter. This is a simple and easy user input widget in flutter.
+We can perform any operation on that user input data using TextFormField.</description>
+    </item>
+    
     <item>
       <title>透明な螺旋 阅读感受</title>
       <link>https://amber916young.github.io/posts/%E9%80%8F%E6%98%8E%E3%81%AA%E8%9E%BA%E6%97%8B/</link>
