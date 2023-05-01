@@ -2,7 +2,7 @@
 title: "Customize search bar in Flutter"
 date: 2023-04-30T13:47:34+01:00
 lastmod: 2023-04-30T13:47:34+01:00
-subTitle: "subTitle"
+subTitle: ""
 description: "In this section, you will learn listen value changes by using the state management riverpod and how to build a standalone search text area"
 draft: false
 featured: true
@@ -19,7 +19,7 @@ cover:
 ---
 
 
-## What's effect we can to realise?
+## What's effect we can realise?
 
 <div class="polaroid" style="width:70%" >
    <a data-fancybox="gallery" data-src="https://i.328888.xyz/2023/04/30/iLiJxq.png">

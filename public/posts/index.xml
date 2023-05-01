@@ -14,8 +14,8 @@
       <pubDate>Sun, 30 Apr 2023 13:47:34 +0100</pubDate>
       
       <guid>https://amber916young.github.io/posts/customize-search-in-flutter/</guid>
-      <description>What&amp;rsquo;s effect we can to realise? Custom search bar The search bar can be used in any listview page,when user texts something in different page should list the correct outcome. Customise text input ✨ Encapsulate TextFormField TextFormField widget is used to take input from the user in flutter. This is a simple and easy user input widget in flutter.
-We can perform any operation on that user input data using TextFormField.</description>
+      <description>What&amp;rsquo;s effect we can realise? Custom search bar The search bar can be used in any listview page,when user texts something in different page should list the correct outcome. Customise text input ✨ Encapsulate TextFormField TextFormField widget is used to take input from the user in flutter. This is a simple and easy user input widget in flutter.
+We can perform any operation on that user input data using TextFormField. You can use that user input, can send and show that input.</description>
     </item>
     
     <item>
