@@ -35,6 +35,11 @@ disqus_shortname = "https-amber916young-github-io"
   publishDate = ["publishDate", "date"]
   expiryDate = ["expiryDate"]
   
+[params.shareButtons]
+  networks = [ "email", "linkedin", "reddit"]
+  size = "small"
+  buttonMargin = "0.2em"
+  icon = "solid"
 
 [params]
 	keywords = "blog,life,code,desgin,yejiaYang,woman stem"
