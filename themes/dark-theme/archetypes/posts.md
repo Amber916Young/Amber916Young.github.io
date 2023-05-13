@@ -2,8 +2,8 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 lastmod: {{ .Date }}
-subTitle: "subTitle"
-description: "this is description"
+subTitle: ""
+description: ""
 draft: false
 featured: true
 type: posts

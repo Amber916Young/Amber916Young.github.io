@@ -2,7 +2,7 @@
 title: "Hibernate-FIX: Why request the initial POST/PUT API takes long time in Hibernate Springboot"
 date: 2023-05-13T20:14:29+01:00
 lastmod: 2023-05-13T20:14:29+01:00
-subTitle: "subTitle"
+subTitle: ""
 description: "Our project is Springboot + hibernate, each time I deploy the project to the cloud(not only the cloud, but also in the local dev), the first POST/PUT API need long time to execute. "
 draft: false
 featured: true
