@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on tothemoon&#39;s blog</title>
+    <link>https://amber916young.github.io/categories/java/</link>
+    <description>Recent content in Java on tothemoon&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sat, 13 May 2023 20:14:29 +0100</lastBuildDate><atom:link href="https://amber916young.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hibernate-FIX: Why request the initial POST/PUT API takes long time in Hibernate Springboot</title>
+      <link>https://amber916young.github.io/posts/hibernate-initapi-slow/</link>
+      <pubDate>Sat, 13 May 2023 20:14:29 +0100</pubDate>
+      
+      <guid>https://amber916young.github.io/posts/hibernate-initapi-slow/</guid>
+      <description>Discover Our project is Springboot + hibernate, each time I deploy the project to the cloud(not only the cloud, but also in the local dev), the first POST/PUT API need long time to execute.
+We make several assumptions:
+DNS lookup TCP Handshake and SSL Handshake AWS RDS performance Code problem Assumption Assumption 1 &amp;mdash; DNS lookup In Postman, obviously it&amp;rsquo;s an ideal time. So, move to the next.
+Assumption 2 &amp;mdash;TCP/SSL Handshake Check the speed of handshake.</description>
+    </item>
+    
+  </channel>
+</rss>

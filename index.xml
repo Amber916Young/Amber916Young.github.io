@@ -9,6 +9,18 @@
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Tue, 07 Mar 2023 22:54:08 +0000</lastBuildDate><atom:link href="https://amber916young.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hibernate-FIX: Why request the initial POST/PUT API takes long time in Hibernate Springboot</title>
+      <link>https://amber916young.github.io/posts/hibernate-initapi-slow/</link>
+      <pubDate>Sat, 13 May 2023 20:14:29 +0100</pubDate>
+      
+      <guid>https://amber916young.github.io/posts/hibernate-initapi-slow/</guid>
+      <description>Discover Our project is Springboot + hibernate, each time I deploy the project to the cloud(not only the cloud, but also in the local dev), the first POST/PUT API need long time to execute.
+We make several assumptions:
+DNS lookup TCP Handshake and SSL Handshake AWS RDS performance Code problem Assumption Assumption 1 &amp;mdash; DNS lookup In Postman, obviously it&amp;rsquo;s an ideal time. So, move to the next.
+Assumption 2 &amp;mdash;TCP/SSL Handshake Check the speed of handshake.</description>
+    </item>
+    
+    <item>
       <title>Customize search bar in Flutter</title>
       <link>https://amber916young.github.io/posts/customize-search-in-flutter/</link>
       <pubDate>Sun, 30 Apr 2023 13:47:34 +0100</pubDate>
