@@ -1,6 +1,6 @@
 function openApp() {
     var appURL = "myapp://myapp/page1";
-    var fallbackURL = "https://example.com/myapp/page1"; // Redirect to web page if the app is not installed
+    var fallbackURL = "https://apps.apple.com/cn/app/ulysses-writing-app/id1225570693?l=en"; // Redirect to web page if the app is not installed
     window.location.href = appURL;
     setTimeout(function() { // Check if the app is opened after 1 second
       if (document.hidden) {
