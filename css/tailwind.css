@@ -1152,7 +1152,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
   align-items: center;
 }
-#about h1,h2,h3,h4,h5,p {
+#about h1,h2,h3,h4,h5{
   margin: 2px 0;
 }
 #about h5{
