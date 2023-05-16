@@ -18,10 +18,9 @@
 function ios() {
 		var _clickTime = +(new Date());
 		var ifr = document.createElement("iframe");
-		ifr.src = "orderitapp://app.orderit.ie?reset-pass"; /***打开app的协议，ios提供***/
+		ifr.src = "orderitapp://app.orderit.ie?reset-pass=KDAJD"; /***打开app的协议，ios提供***/
 		ifr.style.display = "none";
 		document.body.appendChild(ifr);
-		//启动间隔20ms运行的定时器，并检测累计消耗时间是否超过3000ms，超过则结束
 		var _count = 0, intHandle;
 		intHandle = setInterval(function () {
 			_count++;
@@ -30,46 +29,38 @@ function ios() {
 			if (_count >= 100 || elsTime > 3000) {
 				clearInterval(intHandle);
 				document.body.removeChild(ifr);
-				//检查app是否打开
 				if (document.hidden || document.webkitHidden) {
-					// 打开了
 					window.close();
 				} else {
-					// 没打开
-					window.location.href = 'https://apps.apple.com/ie/app/order-it/id6448471657'//下载链接
+					window.location.href = 'https://apps.apple.com/ie/app/order-it/id6448471657'
 				}
 			}
 		}, 20);
 	}
 function openApp() {
 		var u = window.navigator.userAgent;
-// 		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
-// 		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
-// 		if (isAndroid) {
-// 			android();
-// 		}
-// 		if (isiOS) {
+		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; 
+		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+		if (isAndroid) {
+			android();
+		}
+		if (isiOS) {
 			ios();
-// 		}
+		}
 	}
 	function android() {
 		var _clickTime = new Date().getTime();
-		window.location.href = ''; /***打开app的协议,同事提供***/
-
-		//启动间隔20ms运行的定时器，并检测累计消耗时间是否超过3000ms，超过则结束
+		window.location.href = 'orderitapp://app.orderit.ie?reset-pass=KDAJD'; 
 		var _count = 0, intHandle;
 		intHandle = setInterval(function () {
 			_count++;
 			var elsTime = new Date().getTime() - _clickTime;
 			if (_count >= 100 || elsTime > 3000) {
 				clearInterval(intHandle);
-				//检查app是否打开
 				if (document.hidden || document.webkitHidden) {
-					// 打开了
 					window.close();
 				} else {
-					// 没打开
-					window.location.href = ''  //下载链接
+					window.location.href = 'https://play.google.com/store/apps/details?id=com.mycloudpa.app.orderIt'  
 				}
 			}
 		}, 20);
