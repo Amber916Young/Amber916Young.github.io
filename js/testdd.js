@@ -18,7 +18,7 @@
 function ios() {
 		var _clickTime = +(new Date());
 		var ifr = document.createElement("iframe");
-		ifr.src = "orderitapp://myapp/page1"; /***打开app的协议，ios提供***/
+		ifr.src = "orderitapp://app.orderit.ie?detail=1"; /***打开app的协议，ios提供***/
 		ifr.style.display = "none";
 		document.body.appendChild(ifr);
 		//启动间隔20ms运行的定时器，并检测累计消耗时间是否超过3000ms，超过则结束
