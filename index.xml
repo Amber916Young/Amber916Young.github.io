@@ -9,6 +9,18 @@
     <copyright>All rights reserved</copyright>
     <lastBuildDate>Tue, 07 Mar 2023 22:54:08 +0000</lastBuildDate><atom:link href="https://amber916young.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Format Dates in Flutter</title>
+      <link>https://amber916young.github.io/posts/format-dates-in-flutter/</link>
+      <pubDate>Sun, 21 May 2023 09:59:17 +0100</pubDate>
+      
+      <guid>https://amber916young.github.io/posts/format-dates-in-flutter/</guid>
+      <description>The article from geeksforgeeks
+The Dart in-built method, for formatting, dates in Flutter according to the requirements is very limited and restrictive. While dealing with dates it should be in human-readable format but unfortunately, there’s no way of formatting dates in flutter unless you make use of a third-party package.
+In this article, we will look into one such package known as the intl package.
+intl package Using intl package Add the following dependencies to your pubspec.</description>
+    </item>
+    
+    <item>
       <title>Hibernate-FIX: Why request the initial POST/PUT API takes long time in Hibernate Springboot</title>
       <link>https://amber916young.github.io/posts/hibernate-initapi-slow/</link>
       <pubDate>Sat, 13 May 2023 20:14:29 +0100</pubDate>
