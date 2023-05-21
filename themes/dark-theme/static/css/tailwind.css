@@ -1152,11 +1152,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
   align-items: center;
 }
-#about  .resume h1,h2,h3,h4,h5,p {
+
+#about  h2 {
+  margin: 2px 0;
+}
+#about  h3 {
+  margin: 2px 0;
+}
+#about  p {
+  margin: 2px 0;
+}
+
+#about  h4 {
   margin: 2px 0;
 }
 #about h5{
-  padding: 3px;
+  padding: 4px;
+  margin: 2px 0;
+
   background: #2ec4b6;
 }
 #about  ul strong {

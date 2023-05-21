@@ -7,7 +7,7 @@
     <meta name="author" content="tothemoon">
     <meta name="keywords" content="blog,life,code,desgin,yejiaYang,woman stem">
 
-    <title>How to Write a Blog in Hugo | tothemoon&#39;s blog</title>
+    <title>Format Dates in Flutter | tothemoon&#39;s blog</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="icon" type="image/png" href="/images/favicon.png" />
@@ -213,7 +213,7 @@
       <div class="flex flex-col sm:flex-row ">  
         <div class="w-full sm:w-10 sm:mt-10">
           <div class="page-title">
-            <h1>How to Write a Blog in Hugo</h1>
+            <h1>Format Dates in Flutter</h1>
           </div>
          
 
@@ -231,15 +231,13 @@
             <div class="article-meta-info">
                 <span class="article-date article-meta-item">
                     <i class="fa fa-pen"></i>&nbsp;
-                    <span class="pc">March 19, 2023</span>
+                    <span class="pc">May 21, 2023</span>
                 </span>
                 
                 <div class="article-categories article-meta-item">
                     <span class="fa fa-folder-open"></span>
                     
-                    <a href="https://amber916young.github.io/categories/tutorial/">tutorial</a>&nbsp;
-                    
-                    <a href="https://amber916young.github.io/categories/hugo/">hugo</a>&nbsp;
+                    <a href="https://amber916young.github.io/categories/flutter/">flutter</a>&nbsp;
                     
                 </div>
                 
@@ -249,17 +247,17 @@
                     <ul>
                         
                         <li>
-                        #<a href="https://amber916young.github.io/tags/write-a-blog/">write a blog</a>&nbsp;
+                        #<a href="https://amber916young.github.io/tags/format-date/">Format Date</a>&nbsp;
                         </li>
                         
                     </ul>
                 </span>
                 
                 <span class="article-wordcount article-meta-item">
-                    <i class="fa fa-book"></i>&nbsp;<span>574 Words</span>
+                    <i class="fa fa-book"></i>&nbsp;<span>371 Words</span>
                 </span>
                 <span class="article-min2read article-meta-item">
-                    <i class="fa fa-clock"></i>&nbsp;<span>3 mins</span>
+                    <i class="fa fa-clock"></i>&nbsp;<span>2 mins</span>
                 </span>
                 <span class="article-pv article-meta-item">
                     <i class="fa-regular fa-eye"></i>&nbsp;
@@ -277,145 +275,251 @@
             
 
             <div class="page-content">
-              <h2 id="how-to-write-a-blog-in-hugo">How to Write a Blog in Hugo</h2>
-<p>In hugo, the blogs/articles/posts all store in the content/posts/ folder.</p>
-<div class="polaroid" style="width:20%" >
-   <a data-fancybox="gallery" data-src="https://i.328888.xyz/2023/03/20/PU83L.png">
-        <img src="https://i.328888.xyz/2023/03/20/PU83L.png"/>
-    </a>
-  <div class="container">
-    <p> Path of Posts folder </p>
-  </div>
-</div>
-<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new posts/xxxmd
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># such as I create this post</span>
-</span></span><span style="display:flex;"><span>hugo new posts/How-to-write-a-blog.md
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># don&#39;t use space in filename!!!</span></span></span></code></pre></td></tr></table>
-</div>
-</div>
-&ldquo;posts&rdquo; means, create a md file under the posts folder(is also default blog folder)</p>
-<h3 id="structure-of-post-page">Structure of Post page</h3>
-<div class="polaroid" style="width:100%" >
-   <a data-fancybox="gallery" data-src="https://i.328888.xyz/2023/03/20/PUsnA.png">
-        <img src="https://i.328888.xyz/2023/03/20/PUsnA.png"/>
-    </a>
-  <div class="container">
-    <p> Structure of Post/blog page </p>
-  </div>
-</div>
-<p>This page is like a jigsaw puzzle with several chapters combined, this is done so that the code can call on different structures on other pages, reducing code repetition.</p>
-<h3 id="count-how-many-words-in-your-blog">Count how many words in your blog</h3>
-<p>This is built-in function <a href="https://gohugo.io/functions/countwords/"><strong>countwords</strong></a>.</p>
+              <p>The article from <a href="https://www.geeksforgeeks.org/format-dates-in-flutter/">geeksforgeeks</a></p>
+<p>The Dart in-built method, for formatting, dates in Flutter according to the requirements is very limited and restrictive. While dealing with dates it should be in human-readable format but unfortunately, there’s no way of formatting dates in flutter unless you make use of a third-party package.</p>
+<p>In this article, we will look into one such package known as the intl package.</p>
+<h2 id="intl-package">intl package</h2>
+<h3 id="using-intl-package">Using intl package</h3>
+<p>Add the following dependencies to your pubspec.yaml file, you can find the latest dependencies here.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span># allow md file shows HTML format
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fa fa-book&#34;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt;&amp;nbsp;&lt;<span style="color:#f92672">span</span>&gt;{{ .Content | countwords }} Words&lt;/<span style="color:#f92672">span</span>&gt;</span></span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">dependencies</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">intl</span>: <span style="color:#ae81ff">^0.17.0</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
-<h2 id="whats-the-markdowmmd-file">What&rsquo;s the markdowm(MD) file?</h2>
-<p>In Hugo, Markdown (often abbreviated as MD) is a lightweight markup language used to create content for web pages. It allows you to write content using plain text and simple syntax that can be easily converted to HTML by Hugo. Markdown is a popular format for creating web content because it is easy to learn and write, and can be easily converted to HTML without the need for complex formatting tools. <br>
-<br>
-In Hugo, you can create Markdown files to define the content of your website. Each Markdown file typically represents a single page or blog post on your site, and contains the content of that page in Markdown format. For example, if you wanted to create a blog post about a topic, you would create a Markdown file with the post&rsquo;s content in it. <br><br></p>
-<p>Markdown files in Hugo typically have a .md extension and are stored in the content directory of your Hugo project. When Hugo builds your website, it processes each Markdown file and converts it to HTML, which can then be served to visitors of your site. <br><br></p>
-<p>Markdown files in Hugo can include additional metadata in the form of front matter, which is written in YAML, TOML or JSON format and placed at the beginning of the Markdown file. This metadata can be used to provide additional information about the content, such as the page&rsquo;s title, author, and publication date. <br><br></p>
-<h3 id="using-html-tags-in-md-file">Using HTML tags in MD file</h3>
-<p>In hugo, you also can write HTML in MD file. Yeah, super convenient, right? As I mentioned in my first post, to display HTML tags in the md file requires configuration in the configuration file(config.toml).
+<h3 id="add-using-terminal">Add using terminal</h3>
+<p>You can also get the latest intl library using terminal easily:</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># allow md file shows HTML format</span>
-</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>]
-</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>]
-</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>.<span style="color:#a6e22e">renderer</span>]
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">unsafe</span>= <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">hardWraps</span> = <span style="color:#66d9ef">false</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">xhtml</span> = <span style="color:#66d9ef">false</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>flutter pub add intl</span></span></code></pre></td></tr></table>
 </div>
 </div>
-In hugo offical website, you also can find this <a href="https://gohugo.io/getting-started/configuration-markup/#goldmark">configuration</a>.</p>
-<h2 id="output-format-of-post">Output format of post</h2>
+<p>Import it:
+That’s it now import intl package in your Dart code:</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">permalinks</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;/:year/:month/:title/&#34;</span>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;package:intl/intl.dart&#39;</span>;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Still, if you face any error using intl, simply use the following command:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>flutter pub get</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Now let’s take a look at the below example.</p>
+<h3 id="example">Example</h3>
+<p>In the below code we will not be using the intl package for formatting. Also, take a look at the output of the below code.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;package:flutter/material.dart&#39;</span>;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">frontmatter</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">date</span> = [<span style="color:#e6db74">&#34;date&#34;</span>, <span style="color:#e6db74">&#34;publishDate&#34;</span>, <span style="color:#e6db74">&#34;lastmod&#34;</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">lastmod</span> = [<span style="color:#e6db74">&#34;lastmod&#34;</span>, <span style="color:#e6db74">&#34;:git&#34;</span>, <span style="color:#e6db74">&#34;date&#34;</span>, <span style="color:#e6db74">&#34;publishDate&#34;</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">publishDate</span> = [<span style="color:#e6db74">&#34;publishDate&#34;</span>, <span style="color:#e6db74">&#34;date&#34;</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">expiryDate</span> = [<span style="color:#e6db74">&#34;expiryDate&#34;</span>]</span></span></code></pre></td></tr></table>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> main() {
+</span></span><span style="display:flex;"><span>runApp(dateDemo());
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">dateDemo</span> <span style="color:#66d9ef">extends</span> StatelessWidget {
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">@</span>override
+</span></span><span style="display:flex;"><span>Widget build(BuildContext context) {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> MaterialApp(
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// browser tab title
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	title: <span style="color:#e6db74">&#34;Geeksforgeeks&#34;</span>,
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Body
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	home: Scaffold(
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// AppBar
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		appBar: AppBar(
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// AppBar color
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>			backgroundColor: Colors.green.shade900,
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// AppBar title
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>			title: Text(<span style="color:#e6db74">&#34;Geeksforgeeks&#34;</span>),		
+</span></span><span style="display:flex;"><span>		),
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Container or Wrapper
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		body: Container(						
+</span></span><span style="display:flex;"><span>			margin: EdgeInsets.fromLTRB(<span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>),
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// printing text on screen
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>			child: Text(						
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">// Formatted Date
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>			<span style="color:#75715e">// Builtin format / without formatting
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>			DateTime.now().toString(),		
+</span></span><span style="display:flex;"><span>			style: TextStyle(
+</span></span><span style="display:flex;"><span>				
+</span></span><span style="display:flex;"><span>				<span style="color:#75715e">// Styling text
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>				fontWeight: FontWeight.bold, fontSize: <span style="color:#ae81ff">30</span>),
+</span></span><span style="display:flex;"><span>			),
+</span></span><span style="display:flex;"><span>		)),
+</span></span><span style="display:flex;"><span>	);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
 </div>
 </div>
-<h2 id="permalinks">Permalinks</h2>
-<p>In your site configuration, set a URL pattern for regular pages within a top-level section. This is recursive, affecting descendant regular pages.
-<br>
-The permalinks defined in your site configuration do not apply to section pages. To adjust the URL for section pages, set url in front matter.</p>
-<div class="polaroid" style="width:70%" >
-   <a data-fancybox="gallery" data-src="https://i.328888.xyz/2023/03/20/PUGQX.png">
-        <img src="https://i.328888.xyz/2023/03/20/PUGQX.png"/>
+<div class="polaroid" style="width:20%" >
+   <a data-fancybox="gallery" data-src="https://media.geeksforgeeks.org/wp-content/uploads/20210903162212/noformat-244x300.png">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210903162212/noformat-244x300.png"/>
     </a>
-  <div class="container">
-    <p> Hugo offical doc </p>
-  </div>
 </div>
-<p><a href="https://gohugo.io/content-management/urls/#permalinks">More Information</a> you can visit to hugo offical website</p>
-<hr>
-<h2 id="markdowm-file-editor-recommended">Markdowm file editor recommended</h2>
-<p><a href="https://typora.io/">Typora</a> is a great md editor, you can write or organise blog using general format like microsoft word. After you finish the article, just copy paste to the md file.</p>
-<div class="polaroid" style="width:70%" >
-   <a data-fancybox="gallery" data-src="https://i.328888.xyz/2023/03/20/PUcQy.png">
-        <img src="https://i.328888.xyz/2023/03/20/PUcQy.png"/>
+<h2 id="more-dateformat-functions">More DateFormat Functions</h2>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Use</th>
+<th style="text-align:center">Description</th>
+<th style="text-align:center">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">DateFormat.yMMMEd().format(date)</td>
+<td style="text-align:center">Day Name ,Month Name ,Date,Year</td>
+<td style="text-align:center">Fri, Sep 3, 2021</td>
+</tr>
+<tr>
+<td style="text-align:center">DateFormat.MEd().format(date)</td>
+<td style="text-align:center">Day Name,Month/Date in Numbers</td>
+<td style="text-align:center">Fri , 9/3</td>
+</tr>
+<tr>
+<td style="text-align:center">DateFormat.MMMMEEEEd().format(date))</td>
+<td style="text-align:center">DayName,MonthName Date</td>
+<td style="text-align:center">Friday ,September 3</td>
+</tr>
+<tr>
+<td style="text-align:center">DateFormat.yMMMMEEEEd().format(date))</td>
+<td style="text-align:center">DayName ,MonthName Date,Year</td>
+<td style="text-align:center">Friday ,September 3,2021</td>
+</tr>
+<tr>
+<td style="text-align:center">DateFormat.EEEE().format(date)</td>
+<td style="text-align:center">Full DayName only</td>
+<td style="text-align:center">Friday</td>
+</tr>
+<tr>
+<td style="text-align:center">DateFormat.E().format(date)</td>
+<td style="text-align:center">Short DayName</td>
+<td style="text-align:center">Fri</td>
+</tr>
+<tr>
+<td style="text-align:center">DateFormat.M().format(date)</td>
+<td style="text-align:center">Month-Number</td>
+<td style="text-align:center">9</td>
+</tr>
+<tr>
+<td style="text-align:center">DateFormat.MMM().format(date)</td>
+<td style="text-align:center">Short MonthName</td>
+<td style="text-align:center">Sep</td>
+</tr>
+<tr>
+<td style="text-align:center">DateFormat.LLLL().format(date)</td>
+<td style="text-align:center">Full MonthName</td>
+<td style="text-align:center">September</td>
+</tr>
+<tr>
+<td style="text-align:center">DateFormat.j().format(date)</td>
+<td style="text-align:center">Current Time only</td>
+<td style="text-align:center">4 PM</td>
+</tr>
+</tbody>
+</table>
+<div class="polaroid" style="width:20%" >
+   <a data-fancybox="gallery" data-src="https://media.geeksforgeeks.org/wp-content/uploads/20210903171030/all-173x300.png">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210903171030/all-173x300.png"/>
     </a>
 </div>
-(Note: free version you can ask for the author)
+
             </div>
             <aside style=" width: 20%;position: fixed; right: 5%; top: 20%;">
               <nav id="TableOfContents">
   <ul>
-    <li><a href="#how-to-write-a-blog-in-hugo">How to Write a Blog in Hugo</a>
+    <li><a href="#intl-package">intl package</a>
       <ul>
-        <li><a href="#structure-of-post-page">Structure of Post page</a></li>
-        <li><a href="#count-how-many-words-in-your-blog">Count how many words in your blog</a></li>
+        <li><a href="#using-intl-package">Using intl package</a></li>
+        <li><a href="#add-using-terminal">Add using terminal</a></li>
+        <li><a href="#example">Example</a></li>
       </ul>
     </li>
-    <li><a href="#whats-the-markdowmmd-file">What&rsquo;s the markdowm(MD) file?</a>
-      <ul>
-        <li><a href="#using-html-tags-in-md-file">Using HTML tags in MD file</a></li>
-      </ul>
-    </li>
-    <li><a href="#output-format-of-post">Output format of post</a></li>
-    <li><a href="#permalinks">Permalinks</a></li>
-    <li><a href="#markdowm-file-editor-recommended">Markdowm file editor recommended</a></li>
+    <li><a href="#more-dateformat-functions">More DateFormat Functions</a></li>
   </ul>
 </nav>
             </aside>
@@ -737,7 +841,7 @@ background-color: #FF6600
 
 
 
-<a class="resp-sharing-button__link" href="mailto:?subject=How%20to%20Write%20a%20Blog%20in%20Hugo&amp;body=https://amber916young.github.io/posts/how-to-write-a-blog/" target="_self" rel="noopener" aria-label="" title="E-Mail">
+<a class="resp-sharing-button__link" href="mailto:?subject=Format%20Dates%20in%20Flutter&amp;body=https://amber916young.github.io/posts/format-dates-in-flutter/" target="_self" rel="noopener" aria-label="" title="E-Mail">
   <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z"/></svg>
@@ -752,7 +856,7 @@ background-color: #FF6600
 
 
 
-<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://amber916young.github.io/posts/how-to-write-a-blog/&amp;title=How%20to%20Write%20a%20Blog%20in%20Hugo&amp;summary=How%20to%20Write%20a%20Blog%20in%20Hugo&amp;https://amber916young.github.io/posts/how-to-write-a-blog/" target="_blank" rel="noopener" aria-label="">
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://amber916young.github.io/posts/format-dates-in-flutter/&amp;title=Format%20Dates%20in%20Flutter&amp;summary=Format%20Dates%20in%20Flutter&amp;https://amber916young.github.io/posts/format-dates-in-flutter/" target="_blank" rel="noopener" aria-label="">
   <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"/></svg>
@@ -765,7 +869,7 @@ background-color: #FF6600
 
 
 
-<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=https://amber916young.github.io/posts/how-to-write-a-blog/&amp;resubmit=true&amp;title=How%20to%20Write%20a%20Blog%20in%20Hugo" target="_blank" rel="noopener" aria-label="" title="Reddit">
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=https://amber916young.github.io/posts/format-dates-in-flutter/&amp;resubmit=true&amp;title=Format%20Dates%20in%20Flutter" target="_blank" rel="noopener" aria-label="" title="Reddit">
   <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 13.37C1.5 13.07 1 12.35 1 11.5c0-1.1.9-2 2-2 .64 0 1.22.32 1.6.82-1.1.85-1.92 1.9-2.3 3.05zm3.7.13c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9.8 4.8c-1.08.63-2.42.96-3.8.96-1.4 0-2.74-.34-3.8-.95-.24-.13-.32-.44-.2-.68.15-.24.46-.32.7-.18 1.83 1.06 4.76 1.06 6.6 0 .23-.13.53-.05.67.2.14.23.06.54-.18.67zm.2-2.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5.7-2.13c-.38-1.16-1.2-2.2-2.3-3.05.38-.5.97-.82 1.6-.82 1.1 0 2 .9 2 2 0 .84-.53 1.57-1.3 1.87z"/></svg>
@@ -793,10 +897,8 @@ background-color: #FF6600
 
           <div class="pagination"><div class="paginator" >
     
-        <a class="prev btn" href="https://amber916young.github.io/posts/how-to-calculate-the-number-of-views/"><i class="fa-solid fa-arrow-left"></i>How to Calculate the Number of Views </a>
     
-    
-        <a class="next btn" href="https://amber916young.github.io/posts/add-icon-menu/">Add Icon/Active class In Menu <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="next btn" href="https://amber916young.github.io/posts/hibernate-initapi-slow/">Hibernate-FIX: Why request the initial POST/PUT API takes long time in Hibernate Springboot <i class="fa-solid fa-arrow-right"></i></a>
        
     
 </div></div>
