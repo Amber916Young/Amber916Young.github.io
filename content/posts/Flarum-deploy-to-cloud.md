@@ -33,7 +33,8 @@ cover:
 
 ### 👉 Environment configuration
 {{< highlight bash "linenos=table" >}}
-sudo apt update && sudo apt upgrade -y
+sudo apt update
+sudo apt upgrade -y
 
 sudo apt install wget unzip curl nano git -y
 sudo apt install apache2 -y
@@ -63,11 +64,12 @@ sudo mysql_secure_installation
 
 sudo mysql
 
-MariaDB [(none)]> CREATE DATABASE flarum_db;
-MariaDB [(none)]> CREATE USER 'flarum_user'@'localhost' IDENTIFIED BY 'flarum_pass';
-MariaDB [(none)]> GRANT ALL PRIVILEGES ON flarum_db.* TO 'flarum_user'@'localhost';
-MariaDB [(none)]> FLUSH PRIVILEGES;
-MariaDB [(none)]> exit
+# 以下 是数据库sql
+CREATE DATABASE flarum_db;
+CREATE USER 'flarum_user'@'localhost' IDENTIFIED BY 'flarum_pass';
+GRANT ALL PRIVILEGES ON flarum_db.* TO 'flarum_user'@'localhost';
+FLUSH PRIVILEGES;
+exit
 
 {{< /highlight >}}
 

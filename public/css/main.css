@@ -733,9 +733,11 @@ header{
 
 .highlight {
     position: relative;
+	overflow: auto;
 }
 .highlight pre {
     padding-right: 0px;
+	    
 }
 .highlight-copy-btn {
     position: absolute;
