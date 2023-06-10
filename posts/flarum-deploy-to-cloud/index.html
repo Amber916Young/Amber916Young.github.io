@@ -266,7 +266,7 @@
                 </span>
                 
                 <span class="article-wordcount article-meta-item">
-                    <i class="fa fa-book"></i>&nbsp;<span>1102 Words</span>
+                    <i class="fa fa-book"></i>&nbsp;<span>1103 Words</span>
                 </span>
                 <span class="article-min2read article-meta-item">
                     <i class="fa fa-clock"></i>&nbsp;<span>2 mins</span>
@@ -342,9 +342,12 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade -y
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt upgrade -y
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>sudo apt install wget unzip curl nano git -y
 </span></span><span style="display:flex;"><span>sudo apt install apache2 -y
@@ -374,11 +377,12 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>sudo mysql
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>MariaDB <span style="color:#f92672">[(</span>none<span style="color:#f92672">)]</span>&gt; CREATE DATABASE flarum_db;
-</span></span><span style="display:flex;"><span>MariaDB <span style="color:#f92672">[(</span>none<span style="color:#f92672">)]</span>&gt; CREATE USER <span style="color:#e6db74">&#39;flarum_user&#39;</span>@<span style="color:#e6db74">&#39;localhost&#39;</span> IDENTIFIED BY <span style="color:#e6db74">&#39;flarum_pass&#39;</span>;
-</span></span><span style="display:flex;"><span>MariaDB <span style="color:#f92672">[(</span>none<span style="color:#f92672">)]</span>&gt; GRANT ALL PRIVILEGES ON flarum_db.* TO <span style="color:#e6db74">&#39;flarum_user&#39;</span>@<span style="color:#e6db74">&#39;localhost&#39;</span>;
-</span></span><span style="display:flex;"><span>MariaDB <span style="color:#f92672">[(</span>none<span style="color:#f92672">)]</span>&gt; FLUSH PRIVILEGES;
-</span></span><span style="display:flex;"><span>MariaDB <span style="color:#f92672">[(</span>none<span style="color:#f92672">)]</span>&gt; exit</span></span></code></pre></td></tr></table>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 以下 是数据库sql</span>
+</span></span><span style="display:flex;"><span>CREATE DATABASE flarum_db;
+</span></span><span style="display:flex;"><span>CREATE USER <span style="color:#e6db74">&#39;flarum_user&#39;</span>@<span style="color:#e6db74">&#39;localhost&#39;</span> IDENTIFIED BY <span style="color:#e6db74">&#39;flarum_pass&#39;</span>;
+</span></span><span style="display:flex;"><span>GRANT ALL PRIVILEGES ON flarum_db.* TO <span style="color:#e6db74">&#39;flarum_user&#39;</span>@<span style="color:#e6db74">&#39;localhost&#39;</span>;
+</span></span><span style="display:flex;"><span>FLUSH PRIVILEGES;
+</span></span><span style="display:flex;"><span>exit</span></span></code></pre></td></tr></table>
 </div>
 </div>
 <p>以上就是php以及数据库必要环境，接下来是下载Composer，Composer是一个在PHP中进行依赖性管理的工具。</p>
