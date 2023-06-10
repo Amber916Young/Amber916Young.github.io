@@ -3,7 +3,7 @@ title: "Flarum backup"
 date: 2023-06-08T20:16:58+01:00
 lastmod: 2023-06-08T20:16:58+01:00
 subTitle: ""
-description: ""
+description: "备份记录，主要是记录所有用到的扩展库，便于以后查找"
 draft: false
 featured: true
 type: posts
