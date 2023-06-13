@@ -44,6 +44,8 @@ https://extiverse.com/extension/justoverclock/custom-html-widget
 
 https://extiverse.com/extension/nearata/flarum-ext-signup-confirm-password
 
+https://extiverse.com/extension/sycho/flarum-advanced-extension-categories
+https://extiverse.com/extension/swaggymacro/only-starter
 
 https://extiverse.com/extension/datlechin/flarum-scroll-buttons
 
@@ -51,6 +53,10 @@ https://extiverse.com/extension/pattinsonfuture/lang-traditional-chinese
 
 https://extiverse.com/extension/moerio/mixture
 
+https://extiverse.com/extension/askvortsov/flarum-categories
+
+https://extiverse.com/extension/fof/byobu
+https://extiverse.com/extension/v17development/flarum-user-badges
 
 ## 测试地址
 
