@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 10 Jun 2023 19:31:49 +0100</lastBuildDate><atom:link href="https://amber916young.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Jun 2023 18:20:07 +0100</lastBuildDate><atom:link href="https://amber916young.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用XAMPP本地部署Flarum在MAC环境中</title>
+      <link>https://amber916young.github.io/posts/depoly-locally-macos-apache2/</link>
+      <pubDate>Tue, 13 Jun 2023 18:20:07 +0100</pubDate>
+      
+      <guid>https://amber916young.github.io/posts/depoly-locally-macos-apache2/</guid>
+      <description>简单的流程只有三个，不过部署会遇到很多问题，mac自带apache的配置我实在是没弄好，还是下载了XAMPP来部署。
+下载XAMPP 下载composer 下载Flarum 1️⃣ Download XAMPP 进入官网，选择OS X操作系统。 双击dmg可能会出现不允许安装的情况。如果出现这种情况需要进入安全&amp;amp;隐私，输入密码点击同意就可以继续安装了。
+傻瓜安装，完成后运行。
+🌲Config in XAMPP 也许你的电脑已经运行了mysql，那么在XAMPP中，数据库就不会运行。
+如果出现这种情况，点击数据库的配置，把端口号修改为4306， 另外点击【Open Conf File】，修改端口号。
+保存退出后，点击start即可。 做完上面两个步骤，Apache和数据库都是运行状态，点击本地运行链接，如果能看到XAMPP主页说明目前没有问题。
+点击phpmyadmin，进入数据库配置。前一篇文章的数据库信息直接搬过来，直接运行sql语句创建数据库以及用户。 1 2 3 4 CREATE DATABASE flarum_db; CREATE USER &amp;#39;flarum_user&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;flarum_pass&amp;#39;; GRANT ALL PRIVILEGES ON flarum_db.* TO &amp;#39;flarum_user&amp;#39;@&amp;#39;localhost&amp;#39;; FLUSH PRIVILEGES; 创建完成后可以在左侧看到相关的数据库，只不过这个时候，数据库是空的。 到目前为止，XAMPP基础部署已经完成，接下来需要下载Composer。如果已经下载过那么就跳过这一步。 2️⃣ Download Composer 点击主页，直接跟着命令走一遍就可以了。 输入命令查看是否安装成功 1 composer -v 3️⃣ Download Flarum 首先，这个框架放在哪里，apache服务器怎么配置需要弄明白。找到XAMPP的安装路径，在MAC中，此路径是 /Applications/XAMPP
+命令pwd查看路径。 👉 Download Flarum in correct path Flarum框架下载的位置在 /Applications/XAMPP/xamppfiles/htdocs/flarum，htdocs文件夹下没有flarum这个文件夹，所以需要创建一个。
+1 2 cd /Applications/XAMPP/xamppfiles/htdocs/ mkdir flarum 创建完成后，进入此文件夹，输入下载命令。 1 2 3 4 5 cd /flarum // 检查路径是否正确 pwd // 下载 composer create-project flarum/flarum .</description>
+    </item>
+    
     <item>
       <title>Flarum:部署到云端(ubuntu 22.04)</title>
       <link>https://amber916young.github.io/posts/flarum-deploy-to-cloud/</link>

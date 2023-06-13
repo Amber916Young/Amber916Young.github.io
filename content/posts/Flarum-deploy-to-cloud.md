@@ -153,7 +153,7 @@ sudo systemctl restart apache2
 systemctl status apache2
 {{< /highlight >}}
 
-到目前为止，必要配置以及完成✅
+到目前为止，必要配置已经完成✅
 
 ### 👉 Enabling the Ubuntu Firewall
 {{< highlight bash "linenos=table" >}}

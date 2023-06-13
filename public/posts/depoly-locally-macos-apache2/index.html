@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Design by yejiaYang. " />
+    <meta name="author" content="tothemoon">
+    <meta name="keywords" content="blog,life,code,desgin,yejiaYang,woman stem">
+
+    <title>使用XAMPP本地部署Flarum在MAC环境中 | tothemoon&#39;s blog</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="icon"  type="image/x-icon"  href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/tailwind.css?v=3" /> 
+    <link rel="stylesheet" href="/css/main.css?v=1" /> 
+    <link rel="stylesheet" href="/css/404.css" /> 
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://kit.fontawesome.com/237a634d14.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+</head><body class=" bg-portfolio-bg-lighter-gray text-portfolio-text-light-gray">
+
+        <div id="popup"></div>
+        <div id="normal">
+            <header  >
+    <nav  id="top-nav"   class=" fixed z-10 w-full py-4 sm:py-6 text-portfolio-text-light-gray bg-portfolio-bg-lighter-gray">
+      <div   id="menu" class="container flex flex-wrap items-center">
+        
+        <div class="flex gap-4">
+  
+    <a href="https://leetcode.com/BirdyYang/"  target="_blank">
+      <i class="fa-solid fa-bug  fa-lg"></i>
+    </a>
+  
+    <a href="https://github.com/Amber916Young"  target="_blank">
+      <i class="fa-brands fa-github  fa-lg"></i>
+    </a>
+  
+    <a href="https://www.linkedin.com/in/yejia-yang-11105722a/"  target="_blank">
+      <i class="fa-brands fa-linkedin fa-lg"></i>
+    </a>
+  
+    <a href="https://www.instagram.com/tothemoonbird/"  target="_blank">
+      <i class="fa-brands fa-instagram fa-lg"></i>
+    </a>
+  
+</div>
+        
+        <ul class=" hidden sm:flex flex-1 justify-end items-center gap-6 lowercase">
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/"  title="Home">
+    <li class="hover  ">
+      <i class="fa-solid fa-house"></i>
+      Home
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/posts/"  title="My Blog">
+    <li class="hover    active ">
+      <i class="fa-solid fa-paper-plane"></i>
+      My Blog
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/"  title="Tags">
+    <li class="hover  ">
+      <i class="fa-solid fa-tag"></i>
+      Tags
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/about/"  title="Abouts">
+    <li class="hover  ">
+      <i class="fa-sharp fa-solid fa-medal"></i>
+      Abouts
+    </li>
+</a>
+</ul>
+        
+        <div class="flex sm:hidden flex-1 justify-end">
+          <button id="toggle" class="button_container">
+            <i class="fa-solid fa-bars"></i>           
+          </button>
+        </div>
+      </div>
+      <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/"  title="Home">
+    <li class="hover  ">
+      <i class="fa-solid fa-house"></i>
+      Home
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/posts/"  title="My Blog">
+    <li class="hover    active ">
+      <i class="fa-solid fa-paper-plane"></i>
+      My Blog
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/"  title="Tags">
+    <li class="hover  ">
+      <i class="fa-solid fa-tag"></i>
+      Tags
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/about/"  title="Abouts">
+    <li class="hover  ">
+      <i class="fa-sharp fa-solid fa-medal"></i>
+      Abouts
+    </li>
+</a>
+</ul>
+        </nav>
+      </div>
+    </nav>
+  </header><main class="min-h-full">
+<section class="s:mt-10">
+    <div class="container sm:my-14">
+      <div class="flex flex-col sm:flex-row ">  
+        <div class="w-full sm:w-10 sm:mt-10">
+          <div class="page-title">
+            <h1>使用XAMPP本地部署Flarum在MAC环境中</h1>
+          </div>
+         
+
+          <div class="page-metadata">
+<div class="article-header">
+    <div class="avatar">
+        <img src="https://i.328888.xyz/2023/03/19/Pf8MH.png">
+    </div>
+    <div class="info">
+        <div class="author">
+            <span class="name">tothemoon</span>
+            <span class="author-label"></span>
+        </div>
+        <div class="meta-info">
+            <div class="article-meta-info">
+                <span class="article-date article-meta-item">
+                    <i class="fa fa-pen"></i>&nbsp;
+                    <span class="pc">June 13, 2023</span>
+                </span>
+                
+                <div class="article-categories article-meta-item">
+                    <span class="fa fa-folder-open"></span>
+                    
+                    <a href="https://amber916young.github.io/categories/flarum/">Flarum</a>&nbsp;
+                    
+                    <a href="https://amber916young.github.io/categories/apache/">Apache</a>&nbsp;
+                    
+                </div>
+                
+                
+                <span class="article-tags article-meta-item">
+                    <i class="fa fa-tag"></i>&nbsp;
+                    <ul>
+                        
+                        <li>
+                        #<a href="https://amber916young.github.io/tags/macos/">MacOS</a>&nbsp;
+                        </li>
+                        
+                        <li>
+                        #<a href="https://amber916young.github.io/tags/localdepoly/">LocalDepoly</a>&nbsp;
+                        </li>
+                        
+                    </ul>
+                </span>
+                
+                <span class="article-wordcount article-meta-item">
+                    <i class="fa fa-book"></i>&nbsp;<span>1401 Words</span>
+                </span>
+                <span class="article-min2read article-meta-item">
+                    <i class="fa fa-clock"></i>&nbsp;<span>1 mins</span>
+                </span>
+                <span class="article-pv article-meta-item">
+                    <i class="fa-regular fa-eye"></i>&nbsp;
+                    <span id="busuanzi_value_page_pv">
+                    </span>
+                </span>
+
+            </div>
+        </div>
+    </div>
+</div></div>
+
+          <div style="display: flex; " class="sm:mt-10">
+
+            
+
+            <div class="page-content">
+              <p>简单的流程只有三个，不过部署会遇到很多问题，mac自带apache的配置我实在是没弄好，还是下载了XAMPP来部署。</p>
+<ol>
+<li>下载XAMPP</li>
+<li>下载composer</li>
+<li>下载Flarum</li>
+</ol>
+<h2 id="1-download-xampp">1️⃣ Download XAMPP</h2>
+<p>进入<a href="https://www.apachefriends.org/">官网</a>，选择OS X操作系统。
+双击dmg可能会出现不允许安装的情况。如果出现这种情况需要进入安全&amp;隐私，输入密码点击同意就可以继续安装了。</p>
+<div class="polaroid" style="width:100%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/14/VHKCcU.png">
+        <img src="https://i.imgloc.com/2023/06/14/VHKCcU.png"/>
+    </a>
+</div>
+<p>傻瓜安装，完成后运行。</p>
+<div class="polaroid" style="width:40%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/14/VHK2f3.png">
+        <img src="https://i.imgloc.com/2023/06/14/VHK2f3.png"/>
+    </a>
+</div>
+<h3 id="config-in-xampp">🌲Config in XAMPP</h3>
+<p>也许你的电脑已经运行了mysql，那么在XAMPP中，数据库就不会运行。</p>
+<div class="polaroid" style="width:40%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/14/VHKOF5.png">
+        <img src="https://i.imgloc.com/2023/06/14/VHKOF5.png"/>
+    </a>
+</div>
+如果出现这种情况，点击数据库的配置，把端口号修改为4306，
+<div class="polaroid" style="width:40%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/14/VHK8wZ.png">
+        <img src="https://i.imgloc.com/2023/06/14/VHK8wZ.png"/>
+    </a>
+</div>
+<p>另外点击【Open Conf File】，修改端口号。</p>
+<div class="polaroid" style="width:80%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/14/VHKbY8.png">
+        <img src="https://i.imgloc.com/2023/06/14/VHKbY8.png"/>
+    </a>
+</div>
+保存退出后，点击start即可。
+<p>做完上面两个步骤，Apache和数据库都是运行状态，点击<a href="http://localhost/dashboard/">本地运行链接</a>，如果能看到XAMPP主页说明目前没有问题。</p>
+<div class="polaroid" style="width:60%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/14/VHKIxF.png">
+        <img src="https://i.imgloc.com/2023/06/14/VHKIxF.png"/>
+    </a>
+</div>
+<p>点击phpmyadmin，进入数据库配置。前一篇文章的数据库信息直接搬过来，直接运行sql语句创建数据库以及用户。
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> flarum_db;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">USER</span> <span style="color:#e6db74">&#39;flarum_user&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;localhost&#39;</span> <span style="color:#66d9ef">IDENTIFIED</span> <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;flarum_pass&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">ALL</span> <span style="color:#66d9ef">PRIVILEGES</span> <span style="color:#66d9ef">ON</span> flarum_db.<span style="color:#f92672">*</span> <span style="color:#66d9ef">TO</span> <span style="color:#e6db74">&#39;flarum_user&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;localhost&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FLUSH</span> <span style="color:#66d9ef">PRIVILEGES</span>;</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<div class="polaroid" style="width:100%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/14/VHKRcE.png">
+        <img src="https://i.imgloc.com/2023/06/14/VHKRcE.png"/>
+    </a>
+</div>
+创建完成后可以在左侧看到相关的数据库，只不过这个时候，数据库是空的。
+到目前为止，XAMPP基础部署已经完成，接下来需要下载Composer。如果已经下载过那么就跳过这一步。
+<h2 id="2-download-composer">2️⃣ Download Composer</h2>
+<p>点击<a href="https://getcomposer.org/download/">主页</a>，直接跟着命令走一遍就可以了。
+输入命令查看是否安装成功
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>composer -v</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<div class="polaroid" style="width:70%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/14/VHKcsC.png">
+        <img src="https://i.imgloc.com/2023/06/14/VHKcsC.png"/>
+    </a>
+</div>
+<h2 id="3-download-flarum">3️⃣ Download Flarum</h2>
+<p>首先，这个框架放在哪里，apache服务器怎么配置需要弄明白。找到XAMPP的安装路径，在MAC中，此路径是  <strong>/Applications/XAMPP</strong></p>
+<div class="polaroid" style="width:100%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/14/VHKXGt.png">
+        <img src="https://i.imgloc.com/2023/06/14/VHKXGt.png"/>
+    </a>
+</div>
+命令pwd查看路径。
+<div class="polaroid" style="width:100%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/14/VHKgYJ.png">
+        <img src="https://i.imgloc.com/2023/06/14/VHKgYJ.png"/>
+    </a>
+</div>
+<h3 id="-download-flarum-in-correct-path">👉 Download Flarum in correct path</h3>
+<p>Flarum框架下载的位置在 /Applications/XAMPP/xamppfiles/htdocs/flarum，htdocs文件夹下没有flarum这个文件夹，所以需要创建一个。</p>
+<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /Applications/XAMPP/xamppfiles/htdocs/
+</span></span><span style="display:flex;"><span>mkdir flarum</span></span></code></pre></td></tr></table>
+</div>
+</div>
+创建完成后，进入此文件夹，输入下载命令。
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /flarum
+</span></span><span style="display:flex;"><span>// 检查路径是否正确
+</span></span><span style="display:flex;"><span>pwd
+</span></span><span style="display:flex;"><span>// 下载
+</span></span><span style="display:flex;"><span>composer create-project flarum/flarum . --stability<span style="color:#f92672">=</span>beta</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<h3 id="apache-config-edit">👉Apache config edit</h3>
+<p>返回XAMPP界面，点击Apache服务配置，点击【Open Config File】，找到 「&lt;Directory」标签，默认的路径是“/Applications/XAMPP/xamppfiles/htdocs”</p>
+<div class="polaroid" style="width:100%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/14/VHKhyb.png">
+        <img src="https://i.imgloc.com/2023/06/14/VHKhyb.png"/>
+    </a>
+</div>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&lt;Directory <span style="color:#e6db74">&#34;/Applications/XAMPP/xamppfiles/htdocs&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    Options Indexes FollowSymLinks ExecCGI Includes
+</span></span><span style="display:flex;"><span>    AllowOverride All
+</span></span><span style="display:flex;"><span>    Require all granted
+</span></span><span style="display:flex;"><span>&lt;/Directory&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+你可以选择不修改，因为Flarum文件夹就在htdocs文件下下面，那这样子的访问路径就是“http://localhost/flarum/public/”。如果Flarum框架的下载地址不在htdocs文件夹下，那么需要指定正确的文件夹路径。
+<div class="polaroid" style="width:100%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/14/VHKoqw.png">
+        <img src="https://i.imgloc.com/2023/06/14/VHKoqw.png"/>
+    </a>
+</div>
+<p>如果你没有出现这个界面，而是出现了xxx权限不够情况是非常正常的。需要给Flarum文件夹赋予读写权限。
+进入flarum文件夹下，给定777权限。
+注意777是危险操作！如果在本地不考虑安全因素可以完全赋予777权限。
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /Applications/XAMPP/xamppfiles/htdocs/flarum
+</span></span><span style="display:flex;"><span>// . 的意思是该文件夹下所有的文件都有读写权限
+</span></span><span style="display:flex;"><span>sudo chmod -R <span style="color:#ae81ff">777</span>  .
+</span></span><span style="display:flex;"><span>// 或者根据提示文件夹赋予权限
+</span></span><span style="display:flex;"><span>sudo chmod -R <span style="color:#ae81ff">777</span>  <span style="color:#f92672">[</span>文件夹名/文件名<span style="color:#f92672">]</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p>重启服务器，刷新页面就能看到一个全新的flarum界面。如上图，数据库的信息就是之前配置的（和云端部署的信息最好保持一致）
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>// 重启服务器
+</span></span><span style="display:flex;"><span>sudo apachectl restart</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<h2 id="common-apache-cli">Common Apache CLI</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>// 启动服务器
+</span></span><span style="display:flex;"><span>sudo apachectl start
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// 重启服务器
+</span></span><span style="display:flex;"><span>sudo apachectl restart
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// 停止服务器
+</span></span><span style="display:flex;"><span>sudo apachectl stop</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="-summary">🍀 Summary</h2>
+<p>虽然在本地部署的是一个全新的flarum框架，在实际开发过程中大概率是不能次次重新部署的，所以下一步的计划就是云端和本地的来回迁移，更新。
+另外，考虑将数据库与服务器分开部署。也许会增加一些费用，但灵活性更高。</p>
+
+            </div>
+            <aside style=" width: 20%;position: fixed; right: 5%; top: 20%;">
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-download-xampp">1️⃣ Download XAMPP</a>
+      <ul>
+        <li><a href="#config-in-xampp">🌲Config in XAMPP</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-download-composer">2️⃣ Download Composer</a></li>
+    <li><a href="#3-download-flarum">3️⃣ Download Flarum</a>
+      <ul>
+        <li><a href="#-download-flarum-in-correct-path">👉 Download Flarum in correct path</a></li>
+        <li><a href="#apache-config-edit">👉Apache config edit</a></li>
+      </ul>
+    </li>
+    <li><a href="#common-apache-cli">Common Apache CLI</a></li>
+    <li><a href="#-summary">🍀 Summary</a></li>
+  </ul>
+</nav>
+            </aside>
+          </div>
+          <div class="my-14">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+ 
+
+
+
+
+  
+
+
+
+<style>
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: #fff !important;
+  margin: 0.2em
+}
+
+.resp-sharing-button {
+  border-radius: 5px;
+  transition: 25ms ease-out;
+  padding: 0.5em 0.75em;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  
+}
+
+.resp-sharing-button__icon svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+  vertical-align: middle
+}
+
+.resp-sharing-button--small svg {
+  margin: 0;
+  vertical-align: middle
+}
+
+ 
+.resp-sharing-button__icon {
+  stroke: #fff;
+  fill: none
+}
+
+ 
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+  fill: #fff;
+  stroke: none
+}
+
+.resp-sharing-button--twitter {
+  background-color: #55acee
+}
+
+.resp-sharing-button--twitter:hover {
+  background-color: #2795e9
+}
+
+.resp-sharing-button--pinterest {
+  background-color: #bd081c
+}
+
+.resp-sharing-button--pinterest:hover {
+  background-color: #8c0615
+}
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998
+}
+
+.resp-sharing-button--facebook:hover {
+  background-color: #2d4373
+}
+
+.resp-sharing-button--tumblr {
+  background-color: #35465C
+}
+
+.resp-sharing-button--tumblr:hover {
+  background-color: #222d3c
+}
+
+.resp-sharing-button--reddit {
+  background-color: #ff4500
+}
+
+.resp-sharing-button--reddit:hover {
+  background-color: #3a80c1
+}
+
+.resp-sharing-button--google {
+  background-color: #dd4b39
+}
+
+.resp-sharing-button--google:hover {
+  background-color: #c23321
+}
+
+.resp-sharing-button--linkedin {
+  background-color: #0077b5
+}
+
+.resp-sharing-button--linkedin:hover {
+  background-color: #046293
+}
+
+.resp-sharing-button--email {
+  background-color: #777
+}
+
+.resp-sharing-button--email:hover {
+  background-color: #5e5e5e
+}
+
+.resp-sharing-button--xing {
+  background-color: #1a7576
+}
+
+.resp-sharing-button--xing:hover {
+  background-color: #114c4c
+}
+
+.resp-sharing-button--whatsapp {
+  background-color: #25D366
+}
+
+.resp-sharing-button--whatsapp:hover {
+  background-color: #1da851
+}
+
+.resp-sharing-button--hackernews {
+background-color: #FF6600
+}
+.resp-sharing-button--hackernews:hover, .resp-sharing-button--hackernews:focus {   background-color: #FB6200 }
+
+.resp-sharing-button--vk {
+  background-color: #507299
+}
+
+.resp-sharing-button--vk:hover {
+  background-color: #43648c
+}
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.resp-sharing-button--facebook:hover,
+.resp-sharing-button--facebook:active {
+  background-color: #2d4373;
+  border-color: #2d4373;
+}
+
+.resp-sharing-button--twitter {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+
+.resp-sharing-button--twitter:hover,
+.resp-sharing-button--twitter:active {
+  background-color: #2795e9;
+  border-color: #2795e9;
+}
+
+.resp-sharing-button--tumblr {
+  background-color: #35465C;
+  border-color: #35465C;
+}
+
+.resp-sharing-button--tumblr:hover,
+.resp-sharing-button--tumblr:active {
+  background-color: #222d3c;
+  border-color: #222d3c;
+}
+
+.resp-sharing-button--email {
+  background-color: #777777;
+  border-color: #777777;
+}
+
+.resp-sharing-button--email:hover,
+.resp-sharing-button--email:active {
+  background-color: #5e5e5e;
+  border-color: #5e5e5e;
+}
+
+.resp-sharing-button--pinterest {
+  background-color: #bd081c;
+  border-color: #bd081c;
+}
+
+.resp-sharing-button--pinterest:hover,
+.resp-sharing-button--pinterest:active {
+  background-color: #8c0615;
+  border-color: #8c0615;
+}
+
+.resp-sharing-button--linkedin {
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+
+.resp-sharing-button--linkedin:hover,
+.resp-sharing-button--linkedin:active {
+  background-color: #046293;
+  border-color: #046293;
+}
+
+.resp-sharing-button--reddit {
+  background-color: #ff4500;
+  border-color: #ff4500;
+}
+
+.resp-sharing-button--reddit:hover,
+.resp-sharing-button--reddit:active {
+  background-color: #ff5700;
+  border-color: #ff5700;
+}
+
+.resp-sharing-button--xing {
+  background-color: #1a7576;
+  border-color: #1a7576;
+}
+
+.resp-sharing-button--xing:hover
+.resp-sharing-button--xing:active {
+  background-color: #114C4C;
+  border-color: #114C4C;
+}
+
+.resp-sharing-button--whatsapp {
+  background-color: #25D366;
+  border-color: #25D366;
+}
+
+.resp-sharing-button--whatsapp:hover,
+.resp-sharing-button--whatsapp:active {
+  background-color: #1DA851;
+  border-color: #1DA851;
+}
+
+.resp-sharing-button--hackernews {
+  background-color: #FF6600;
+  border-color: #FF6600;
+}
+
+.resp-sharing-button--hackernews:hover
+.resp-sharing-button--hackernews:active {
+  background-color: #FB6200;
+  border-color: #FB6200;
+}
+
+.resp-sharing-button--vk {
+  background-color: #507299;
+  border-color: #507299;
+}
+
+.resp-sharing-button--vk:hover
+.resp-sharing-button--vk:active {
+  background-color: #43648c;
+  border-color: #43648c;
+}
+
+.resp-sharing-button--telegram {
+  background-color: #54A9EB;
+}
+
+.resp-sharing-button--telegram:hover {
+  background-color: #4B97D1;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<a class="resp-sharing-button__link" href="mailto:?subject=%e4%bd%bf%e7%94%a8XAMPP%e6%9c%ac%e5%9c%b0%e9%83%a8%e7%bd%b2Flarum%e5%9c%a8MAC%e7%8e%af%e5%a2%83%e4%b8%ad&amp;body=https://amber916young.github.io/posts/depoly-locally-macos-apache2/" target="_self" rel="noopener" aria-label="" title="E-Mail">
+  <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z"/></svg>
+
+    
+    </div>
+  </div>
+</a>
+
+
+
+
+
+
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://amber916young.github.io/posts/depoly-locally-macos-apache2/&amp;title=%e4%bd%bf%e7%94%a8XAMPP%e6%9c%ac%e5%9c%b0%e9%83%a8%e7%bd%b2Flarum%e5%9c%a8MAC%e7%8e%af%e5%a2%83%e4%b8%ad&amp;summary=%e4%bd%bf%e7%94%a8XAMPP%e6%9c%ac%e5%9c%b0%e9%83%a8%e7%bd%b2Flarum%e5%9c%a8MAC%e7%8e%af%e5%a2%83%e4%b8%ad&amp;https://amber916young.github.io/posts/depoly-locally-macos-apache2/" target="_blank" rel="noopener" aria-label="">
+  <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"/></svg>
+
+    
+    </div>
+  </div>
+</a>
+
+
+
+
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=https://amber916young.github.io/posts/depoly-locally-macos-apache2/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8XAMPP%e6%9c%ac%e5%9c%b0%e9%83%a8%e7%bd%b2Flarum%e5%9c%a8MAC%e7%8e%af%e5%a2%83%e4%b8%ad" target="_blank" rel="noopener" aria-label="" title="Reddit">
+  <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 13.37C1.5 13.07 1 12.35 1 11.5c0-1.1.9-2 2-2 .64 0 1.22.32 1.6.82-1.1.85-1.92 1.9-2.3 3.05zm3.7.13c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9.8 4.8c-1.08.63-2.42.96-3.8.96-1.4 0-2.74-.34-3.8-.95-.24-.13-.32-.44-.2-.68.15-.24.46-.32.7-.18 1.83 1.06 4.76 1.06 6.6 0 .23-.13.53-.05.67.2.14.23.06.54-.18.67zm.2-2.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5.7-2.13c-.38-1.16-1.2-2.2-2.3-3.05.38-.5.97-.82 1.6-.82 1.1 0 2 .9 2 2 0 .84-.53 1.57-1.3 1.87z"/></svg>
+
+    
+    </div>
+  </div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+          <div class="pagination"><div class="paginator" >
+    
+    
+        <a class="next btn" href="https://amber916young.github.io/posts/flarum-deploy-to-cloud/">Flarum:部署到云端(ubuntu 22.04) <i class="fa-solid fa-arrow-right"></i></a>
+       
+    
+</div></div>
+          <div class="comment-block">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    (function() {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+    
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = '';
+        dsq.src = '//https-amber916young-github-io.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></div>
+        </div>
+      </div>
+      </div>
+  </section>
+                </main><footer class="bg-portfolio-bg-darker-gray">
+    <div class="container flex flex-col sm:flex-row justify-between gap-y-10 sm:gap-4 py-14">
+    <div class="flex-1">
+      
+      <h4 class="font-bold mb-4 text-lg">Copyright© All rights reserved</h4>
+      <p class="text-sm mb-2"> 
+        <span id="js-year"></span> - tothemoon
+      </p>
+      <p class="text-sm mb-4">Design by yejiaYang. </p>
+      
+        <div class="text-sm">
+          <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+            <i class="fa-solid fa-chart-simple"></i>
+            TotalView&nbsp;
+            <span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+          </span>|
+          <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+            <i class="fa-solid fa-eye"></i>
+            Visitor&nbsp;
+            <span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+          </span>
+      </div>
+    </div>
+
+
+
+    
+    <div class="flex-1">
+      <h4 class="font-bold mb-4 text-lg">Quick links</h4>
+      <ul class="list-none text-sm">
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/"  title="Home">
+    <li class="hover  ">
+      <i class="fa-solid fa-house"></i>
+      Home
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/posts/"  title="My Blog">
+    <li class="hover    active ">
+      <i class="fa-solid fa-paper-plane"></i>
+      My Blog
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/"  title="Tags">
+    <li class="hover  ">
+      <i class="fa-solid fa-tag"></i>
+      Tags
+    </li>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/about/"  title="Abouts">
+    <li class="hover  ">
+      <i class="fa-sharp fa-solid fa-medal"></i>
+      Abouts
+    </li>
+</a>
+</ul>
+    </div>
+    
+    <div class="flex-1">        
+      <h4 class="font-bold mb-4 text-lg">Contact me</h4>
+      <a href="mailto:frygucki@gmail.com?subject=Hello" class="text-sm hover">youngyejia@163.com</a>
+      <div class="flex gap-4 mt-4">
+  
+    <a href="https://leetcode.com/BirdyYang/"  target="_blank">
+      <i class="fa-solid fa-bug  fa-lg"></i>
+    </a>
+  
+    <a href="https://github.com/Amber916Young"  target="_blank">
+      <i class="fa-brands fa-github  fa-lg"></i>
+    </a>
+  
+    <a href="https://www.linkedin.com/in/yejia-yang-11105722a/"  target="_blank">
+      <i class="fa-brands fa-linkedin fa-lg"></i>
+    </a>
+  
+    <a href="https://www.instagram.com/tothemoonbird/"  target="_blank">
+      <i class="fa-brands fa-instagram fa-lg"></i>
+    </a>
+  
+</div>
+    </div>
+  </div>
+</footer>
+<button class="scrollToTopBtn showBtn">
+    <i class="fa-solid fa-plane-up"></i>
+</button>
+        </div><script src="/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/particles.min.js"></script>
+<script src="/js/typed/typed.min.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<script src="/js/main.js?v=2"></script>
+<script src="/js/testdd.js?v=1"></script></body>
+</html>
