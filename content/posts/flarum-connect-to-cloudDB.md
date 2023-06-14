@@ -86,8 +86,8 @@ cover:
 </div>
 
 ## 2️⃣ Sync plugin
-光连接数据库访问主页也许会出错，特别是在项目以及很大的情况下，所以必须同步插件库。
-1. 在云端Flarum根目录中，找到找到以下两个文件 ：**composer.json & composer.lock**
+光连接数据库访问主页也许会出错，特别是在项目已经很大的情况下，所以必须同步插件库。
+1. 在云端Flarum根目录中，找到以下两个文件 ：**composer.json & composer.lock**
 2. 将这两个文件复制到本地Flarum的根目录中。
 
 <div class="polaroid" style="width:100%" >
