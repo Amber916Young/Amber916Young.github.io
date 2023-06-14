@@ -12,8 +12,8 @@ author: tothemoon
 tags: ["Tutorial","Cloud", "Linux","Ubuntu"]
 categories: ["Flarum"]
 cover:
-    position: <left,right>
-    image: "null"
+    position: right
+    image: "https://i.imgloc.com/2023/06/15/VOeO5L.png"
     alt: "<alt text>"
     caption: "<text>"
 ---

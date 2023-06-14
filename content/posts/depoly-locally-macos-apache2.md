@@ -12,8 +12,8 @@ author: tothemoon
 tags: ["MacOS","LocalDepoly"]
 categories: ["Flarum","Apache"]
 cover:
-    position: <left,right>
-    image: "null"
+    position: left
+    image: "https://i.imgloc.com/2023/06/15/VOeH3k.png"
     alt: "<alt text>"
     caption: "<text>"
 ---
@@ -156,7 +156,14 @@ composer create-project flarum/flarum . --stability=beta
     </a>
 </div>
 
-如果你没有出现这个界面，而是出现了xxx权限不够情况是非常正常的。需要给Flarum文件夹赋予读写权限。
+
+如果你没有出现这个界面，而是出现了xxx权限不够情况是非常正常的。
+<div class="polaroid" style="width:100%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/14/VOxnO3.png">
+        <img src="https://i.imgloc.com/2023/06/14/VOxnO3.png"/>
+    </a>
+</div>
+需要给Flarum文件夹赋予读写权限。
 进入flarum文件夹下，给定777权限。
 注意777是危险操作！如果在本地不考虑安全因素可以完全赋予777权限。
 {{< highlight bash "linenos=table" >}}
@@ -166,6 +173,12 @@ sudo chmod -R 777  .
 // 或者根据提示文件夹赋予权限
 sudo chmod -R 777  [文件夹名/文件名]
 {{< /highlight >}}
+
+<div class="polaroid" style="width:100%" >
+   <a data-fancybox="gallery" data-src="https://i.imgloc.com/2023/06/15/VOelJa.png">
+        <img src="https://i.imgloc.com/2023/06/15/VOelJa.png"/>
+    </a>
+</div>
 
 重启服务器，刷新页面就能看到一个全新的flarum界面。如上图，数据库的信息就是之前配置的（和云端部署的信息最好保持一致）
 {{< highlight bash "linenos=table" >}}
