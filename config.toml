@@ -42,25 +42,25 @@ disqus_shortname = "https-amber916young-github-io"
   icon = "solid"
 
 [params]
-	keywords = "blog,life,code,desgin,yejiaYang,woman stem"
+	keywords = "blog,life,code,desgin,woman stem"
   author = "tothemoon"
   homepage = "tothemoon"
-  email = "youngyejia@163.com"
+  email = "none"
   avatar = "https://i.328888.xyz/2023/03/19/Pf8MH.png"
-  description = "Design by yejiaYang. "
+  description = "Design by null. "
   aboutImage = "https://i.328888.xyz/2023/03/19/Pf8MH.png"
-  [[params.social]]
-      url   = "https://leetcode.com/BirdyYang/"
-      icon  = "fa-solid fa-bug  fa-lg" 
-  [[params.social]]
-      url   = "https://github.com/Amber916Young"
-      icon  = "fa-brands fa-github  fa-lg" 
-  [[params.social]]
-      url   = "https://www.linkedin.com/in/yejia-yang-11105722a/"
-      icon  = "fa-brands fa-linkedin fa-lg"
-  [[params.social]]
-      url = "https://www.instagram.com/tothemoonbird/"  
-      icon = "fa-brands fa-instagram fa-lg" 
+  # [[params.social]]
+  #     url   = "https://leetcode.com/BirdyYang/"
+  #     icon  = "fa-solid fa-bug  fa-lg" 
+  # [[params.social]]
+  #     url   = "https://github.com/Amber916Young"
+  #     icon  = "fa-brands fa-github  fa-lg" 
+  # # [[params.social]]
+  # #     url   = "https://www.linkedin.com/in/yejia-yang-11105722a/"
+  # #     icon  = "fa-brands fa-linkedin fa-lg"
+  # # [[params.social]]
+  # #     url = "https://www.instagram.com/tothemoonbird/"  
+  # #     icon = "fa-brands fa-instagram fa-lg" 
   [params.busuanzi_count]
     enable = true
     site_uv = true
@@ -96,12 +96,12 @@ sectionPagesMenu = "main"
     identifier = "tags"
     url = "/tags/"
     weight = 3
-  [[menu.main]]
-    name = "Abouts"
-    pre = '<i class="fa-sharp fa-solid fa-medal"></i>'
-    identifier = "about"
-    url = "/about/"
-    weight = 4
+  # [[menu.main]]
+  #   name = "Abouts"
+  #   pre = '<i class="fa-sharp fa-solid fa-medal"></i>'
+  #   identifier = "about"
+  #   url = "/about/"
+  #   weight = 4
 
 
 # code block buil-in tool
