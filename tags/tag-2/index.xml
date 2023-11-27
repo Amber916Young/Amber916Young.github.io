@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>tag 2 on YanYan Blog</title>
+    <link>https://amber916young.github.io/tags/tag-2/</link>
+    <description>Recent content in tag 2 on YanYan Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 27 Oct 2023 22:56:18 +0800</lastBuildDate><atom:link href="https://amber916young.github.io/tags/tag-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://amber916young.github.io/about/</link>
+      <pubDate>Fri, 27 Oct 2023 22:56:18 +0800</pubDate>
+      
+      <guid>https://amber916young.github.io/about/</guid>
+      <description>自我介绍</description>
+    </item>
+    
+  </channel>
+</rss>

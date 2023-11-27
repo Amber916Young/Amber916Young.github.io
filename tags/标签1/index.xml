@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>标签1 on YanYan Blog</title>
+    <link>https://amber916young.github.io/tags/%E6%A0%87%E7%AD%BE1/</link>
+    <description>Recent content in 标签1 on YanYan Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 21 Nov 2023 21:41:15 +0800</lastBuildDate><atom:link href="https://amber916young.github.io/tags/%E6%A0%87%E7%AD%BE1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>生活继续</title>
+      <link>https://amber916young.github.io/life/ying/</link>
+      <pubDate>Tue, 21 Nov 2023 21:41:15 +0800</pubDate>
+      
+      <guid>https://amber916young.github.io/life/ying/</guid>
+      <description>我的第一篇生活类文章</description>
+    </item>
+    
+    <item>
+      <title>Ww</title>
+      <link>https://amber916young.github.io/life/ww/</link>
+      <pubDate>Tue, 21 Nov 2023 20:47:56 +0800</pubDate>
+      
+      <guid>https://amber916young.github.io/life/ww/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
